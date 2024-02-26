@@ -6,8 +6,6 @@ from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
 import os
-import plotly.express as px
-import plotly.graph_objects as go
 import streamlit.components.v1 as components
 import webbrowser
 import base64
