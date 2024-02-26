@@ -73,7 +73,7 @@ expander9.write('Including the Raspberry Pi Operating system')
 st.markdown("<style> .big-font {font-size:20px !important;color:black} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-font"><b>For your convenient, here is a "to do list" for the equipment<b></p>', unsafe_allow_html=True)
 
-
+import streamlit_extras
 from streamlit_extras.stodo import to_do
 
 expander10 = st.expander('Equipment list')
