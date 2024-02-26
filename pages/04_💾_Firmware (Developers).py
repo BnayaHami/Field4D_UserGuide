@@ -134,23 +134,23 @@ with tab14:
 
 with tab15:
      st.write('**Press "Start"**')
-     st.image(f'Firmware//gw3.png')   
+     st.image(f'Firmware/gw3.png')   
 
 with tab16:
      st.write('**Press "Browse"**')
-     st.image(f'Firmware//gw4.png')  
+     st.image(f'Firmware/gw4.png')  
 
 with tab17:
      st.write('**Choose the "gw" file**')
-     st.image(f'Firmware//gw5.png')   
+     st.image(f'Firmware/gw5.png')   
 
 with tab18:
      st.write('**Press "Load Image"**')
-     st.image(f'Firmware//gw6.png')
+     st.image(f'Firmware/gw6.png')
 
 with tab19:
      st.write('**Make sure the program loaded successfully**')
-     st.image(f'Firmware//gw7.png')
+     st.image(f'Firmware/gw7.png')
 
 with tab20:
      st.subheader("Your'e all set!")           
@@ -180,50 +180,50 @@ with tab22:
 
 with tab23:
     st.write('**The debugger should appear**')
-    st.image(f'Firmware//sp2.png')     
+    st.image(f'Firmware/sp2.png')     
 
 with tab24:
     st.markdown("<style> .big-fonts {font-size:18px !important; color:red} </style>", unsafe_allow_html=True)
     st.write('**Conncet a sensor to the debugger (video below)**')
     st.markdown('<p class="big-fonts"><b>Warning: do not connect the debugger to a sensor when the the batteries are in<b></p>', unsafe_allow_html=True)
-    st.image(f'Firmware//debugger2_edit.png')
+    st.image(f'Firmware/debugger2_edit.png')
     st.subheader('How to connect a sensor to the debugger:') 
     if st.button('open video'):
-        debugger = open(f'Firmware//debugger.mp4', 'rb')
+        debugger = open(f'Firmware/debugger.mp4', 'rb')
         video_bytes = debugger.read() 
         st.video(video_bytes)     
 
 with tab25:
      st.write('**In this tab insert the following: "cc2650"**')
-     st.image(f'Firmware//sp3.png')  
+     st.image(f'Firmware/sp3.png')  
 
 with tab26:
      st.write('**Choose the sencod one**')
-     st.image(f'Firmware//sp4.png')   
+     st.image(f'Firmware/sp4.png')   
 
 with tab27:
      st.write('**Scroll down and press "Start"**')
-     st.image(f'Firmware//sp5.png')
+     st.image(f'Firmware/sp5.png')
 
 with tab28:
      st.write('**Press "Browse"**')
-     st.image(f'Firmware//sp6.png')
+     st.image(f'Firmware/sp6.png')
 
 with tab29:
      st.write('**Choose the "sp" file**')
-     st.image(f'Firmware//sp7.png')
+     st.image(f'Firmware/sp7.png')
 
 with tab30:
      st.write('**Press "Load Image"**')
-     st.image(f'Firmware//sp8.png')
+     st.image(f'Firmware/sp8.png')
 
 with tab31:
      st.write('**Make sure the program loaded successfully**')
-     st.image(f'Firmware//sp9.png')
+     st.image(f'Firmware/sp9.png')
 
 with tab32:
     st.write('**Disconnect the sensor from the debugger**')
-    debugger2 = open(f'Firmware//debugger2.mp4', 'rb')
+    debugger2 = open(f'Firmware/debugger2.mp4', 'rb')
     video_bytes2 = debugger2.read() 
     st.video(video_bytes2)     
 
