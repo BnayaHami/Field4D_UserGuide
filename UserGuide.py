@@ -1,7 +1,6 @@
 # libraries
 import streamlit as st
 import pandas as pd
-import seaborn as sns
 import numpy as np
 from PIL import Image
 from PIL import ImageDraw
