@@ -50,43 +50,43 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11 = st.tabs([' 
 with tab1:
     st.write('**Open the Raspberry Pi Imager**')
     st.write("**Note:** If you have something written on your card, you might would need to reset it before writing the IMG")
-    st.image(f'Firmware//firm1.png')
+    st.image(f'Firmware/firm1.png')
 
 with tab2:
      st.write('**Insert the card reader with the MicroSD card**')
-     st.image(f'Firmware//IMG.png')
+     st.image(f'Firmware/IMG.png')
 
 with tab3:
     st.write('**Click on “CHOOSE STORAGE”**')
-    st.image(f'Firmware//firm2.png')
+    st.image(f'Firmware/firm2.png')
 
 with tab4:
     st.write('**Choose the microSD card**')
-    st.image(f'Firmware//firm3.png')
+    st.image(f'Firmware/firm3.png')
 
 with tab5:
     st.write('**Click on “CHOOSE OS”**')
-    st.image(f'Firmware//firm4.png')
+    st.image(f'Firmware/firm4.png')
 
 with tab6:
     st.write('**Choose “Use custom”**')
-    st.image(f'Firmware//firm5.png')
+    st.image(f'Firmware/firm5.png')
 
 with tab7:
     st.write('**Choose the IMG**')
-    st.image(f'Firmware//firm6.png')
+    st.image(f'Firmware/firm6.png')
 
 with tab8:
     st.write('**Click on “write”**')
-    st.image(f'Firmware//firm7.png') 
+    st.image(f'Firmware/firm7.png') 
 
 with tab9:
     st.write('**Click on “yes”**')
-    st.image(f'Firmware//firm8.png') 
+    st.image(f'Firmware/firm8.png') 
 
 with tab10:
     st.write('**Click on “continue”**')
-    st.image(f'Firmware//firm9.png')  
+    st.image(f'Firmware/firm9.png')  
 
 with tab11:
     st.subheader("Your'e all set!")
