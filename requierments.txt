@@ -10,12 +10,14 @@ Pillow==9.2.0
 plotly==5.17.0
 python==3.9.0
 python-git==2018.2.1
-streamlit==1.14.0
+streamlit==1.31.1
 streamlit-camera-input-live==0.2.0
 streamlit-card==0.0.4
 streamlit-embedcode==0.1.2
 streamlit-extras==0.4.0
 streamlit-faker==0.0.2
+streamlit-image-coordinates==0.1.6
+streamlit-image-select==0.6.0
 streamlit-keyup==0.2.0
 streamlit-toggle-switch==1.0.2
-streamlit-vertical-slider==1.0.2
+streamlit-vertical-slider==2.5.5
