@@ -34,40 +34,40 @@ div[data-testid="stExpander"] details summary p{
 st.subheader('Self-purchase:')
 
 expander1 = st.expander('RaspberryPi')
-expander1.image(f'Hardware\\pi.PNG', width=200)
+expander1.image(f'Hardware\\pi.png', width=200)
 expander1.write('**Note: use only RaspberyPi 4 or 5**')
 expander1.write('Suggestions for online purchace:')
 expander1.write('https://www.raspberrypi.com/products/raspberry-pi-4-model-b/')
 expander1.write('https://piitel.co.il/shop/raspberry-pi-4/')
 
 expander2 = st.expander('RaspberryPi power supply')
-expander2.image(f'Hardware\\power.PNG', width=200)
+expander2.image(f'Hardware\\power.png', width=200)
 expander2.write('Suggestion for online purchase:')
 expander2.write('https://piitel.co.il/shop/official-15-3w-usb-c-power-supply-raspberry-pi-4')
 
 expander3 = st.expander('Micro-USB cable')
-expander3.image(f'Hardware\\cable.PNG', width=200)
+expander3.image(f'Hardware\\cable.png', width=200)
 
 expander4 = st.expander('Network cable')
-expander4.image(f'Hardware\\n-cable.PNG', width=200)
+expander4.image(f'Hardware\\n-cable.png', width=200)
 
 expander5 = st.expander('AA batteries')
-expander5.image(f'Hardware\\battery.PNG', width=150)
+expander5.image(f'Hardware\\battery.png', width=150)
 
 expander6 = st.expander('Card Reader/Writer (optional)')
-expander6.image(f'Hardware\\card.PNG', width=200)
+expander6.image(f'Hardware\\card.png', width=200)
 expander6.write('Relevant for developers')
 
 st.subheader('Provided equipment:')
 
 expander7 = st.expander('LaunchPad CC2650')
-expander7.image(f'Hardware\\gw.PNG', width=200)
+expander7.image(f'Hardware\\gw.png', width=200)
 
 expander8 = st.expander('Sensortag cc2650stk')
-expander8.image(f'Hardware\\sp.PNG', width=200)
+expander8.image(f'Hardware\\sp.png', width=200)
 
 expander9 = st.expander('MicroSD')
-expander9.image(f'Hardware\\sd.PNG', width=200)
+expander9.image(f'Hardware\\sd.png', width=200)
 expander9.write('Including the Raspberry Pi Operating system')
 
 st.markdown("<style> .big-font {font-size:20px !important;color:black} </style>", unsafe_allow_html=True)
