@@ -53,15 +53,15 @@ with st.expander('Downloading Uniflash software'):
     with tab2:
         st.markdown("<style> .big-font {font-size:19px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-font">Press on "Downloads"</p>', unsafe_allow_html=True)
-        st.image(f'FAQ\\ti1.PNG')
+        st.image(f'FAQ//ti1.png')
     with tab3:
         st.markdown("<style> .big-font {font-size:19px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-font">Press on "Download options"</p>', unsafe_allow_html=True)
-        st.image(f'FAQ\\ti2.PNG')
+        st.image(f'FAQ//ti2.png')
     with tab4:
         st.markdown("<style> .big-font {font-size:19px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-font">Choose the option suitable for you</p>', unsafe_allow_html=True)
-        st.image(f'FAQ\\ti3.PNG')
+        st.image(f'FAQ//ti3.png')
     with tab5:
         st.markdown('<p class="big-font">Follow the wizard instructions for the installation</p>', unsafe_allow_html=True)
 
@@ -70,7 +70,7 @@ with st.expander('Downloading Uniflash software'):
 with st.expander('Writing error on Uniflash'):
     st.markdown("<style> .big-font {font-size:19px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-font">if you are getting the following error while writing the SensorTag/LaunchPad:</p>', unsafe_allow_html=True)
-    st.image(f'FAQ\\debug.PNG')
+    st.image(f'FAQ//debug.png')
     st.markdown('<p class="big-font">Press "Update"</p>', unsafe_allow_html=True)
 
 # expander1 = st.expander('Downloading Uniflash')
