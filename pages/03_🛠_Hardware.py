@@ -73,47 +73,47 @@ expander9.write('Including the Raspberry Pi Operating system')
 st.markdown("<style> .big-font {font-size:20px !important;color:black} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-font"><b>For your convenient, here is a "to do list" for the equipment<b></p>', unsafe_allow_html=True)
 
-import streamlit_extras
-from streamlit_extras.stodo import to_do
+# import streamlit_extras
+# from streamlit_extras.stodo import to_do
 
-expander10 = st.expander('Equipment list')
-with expander10:
-    to_do(
-        [(st.write, "**RaspberryPi**")],
-        "Pi",
-    )
-    to_do(
-        [(st.write, "**RaspberryPi power supply**")],
-        "Pi_supply",
-    )
-    to_do(
-        [(st.write, "**Micro-USB cable**")],
-        "USB",
-    )
-    to_do(
-        [(st.write, "**Network cable**")],
-        "network",
-    )
-    to_do(
-        [(st.write, "**AA batteries**")],
-        "AA",
-    )
-    to_do(
-        [(st.write, "**Card Reader/Writer (optional)**")],
-        "card",
-    )
-    to_do(
-        [(st.write, "**LaunchPad CC2650**")],
-        "gw",
-    )
-    to_do(
-        [(st.write, "**Sensortag cc2650stk**")],
-        "sp",
-    )
-    to_do(
-        [(st.write, "**MicroSD**")],
-        "sd",
-    )
+# expander10 = st.expander('Equipment list')
+# with expander10:
+#     to_do(
+#         [(st.write, "**RaspberryPi**")],
+#         "Pi",
+#     )
+#     to_do(
+#         [(st.write, "**RaspberryPi power supply**")],
+#         "Pi_supply",
+#     )
+#     to_do(
+#         [(st.write, "**Micro-USB cable**")],
+#         "USB",
+#     )
+#     to_do(
+#         [(st.write, "**Network cable**")],
+#         "network",
+#     )
+#     to_do(
+#         [(st.write, "**AA batteries**")],
+#         "AA",
+#     )
+#     to_do(
+#         [(st.write, "**Card Reader/Writer (optional)**")],
+#         "card",
+#     )
+#     to_do(
+#         [(st.write, "**LaunchPad CC2650**")],
+#         "gw",
+#     )
+#     to_do(
+#         [(st.write, "**Sensortag cc2650stk**")],
+#         "sp",
+#     )
+#     to_do(
+#         [(st.write, "**MicroSD**")],
+#         "sd",
+#     )
 
 
 
