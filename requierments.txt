@@ -1,5 +1,4 @@
 google==3.0.0
-htbuilder==0.6.2
 image==1.5.33
 matplotlib==3.5.1
 markdownlit==0.0.5
@@ -20,3 +19,4 @@ streamlit-faker==0.0.2
 streamlit-keyup==0.2.0
 streamlit-toggle-switch==1.0.2
 streamlit-vertical-slider==1.0.2
+htbuilder==0.6.2
