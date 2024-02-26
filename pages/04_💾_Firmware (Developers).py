@@ -122,15 +122,15 @@ tab12, tab13, tab14, tab15, tab16, tab17, tab18, tab19, tab20 = st.tabs([' 1', '
 
 with tab12:
      st.write('**Open UniFlash**')
-     st.image(f'Firmware//gw1.png')
+     st.image(f'Firmware/gw1.png')
 
 with tab13:
      st.write('**Connect the LaunchPad**')
-     st.image(f'Firmware//gw_c.png')
+     st.image(f'Firmware/gw_c.png')
 
 with tab14:
      st.write('**The LaunchPad should appear**')
-     st.image(f'Firmware//gw2.png')     
+     st.image(f'Firmware/gw2.png')     
 
 with tab15:
      st.write('**Press "Start"**')
