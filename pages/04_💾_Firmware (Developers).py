@@ -50,43 +50,43 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11 = st.tabs([' 
 with tab1:
     st.write('**Open the Raspberry Pi Imager**')
     st.write("**Note:** If you have something written on your card, you might would need to reset it before writing the IMG")
-    st.image(f'Firmware\\firm1.PNG')
+    st.image(f'Firmware\\firm1.png')
 
 with tab2:
      st.write('**Insert the card reader with the MicroSD card**')
-     st.image(f'Firmware\\IMG.PNG')
+     st.image(f'Firmware\\IMG.png')
 
 with tab3:
     st.write('**Click on “CHOOSE STORAGE”**')
-    st.image(f'Firmware\\firm2.PNG')
+    st.image(f'Firmware\\firm2.png')
 
 with tab4:
     st.write('**Choose the microSD card**')
-    st.image(f'Firmware\\firm3.PNG')
+    st.image(f'Firmware\\firm3.png')
 
 with tab5:
     st.write('**Click on “CHOOSE OS”**')
-    st.image(f'Firmware\\firm4.PNG')
+    st.image(f'Firmware\\firm4.png')
 
 with tab6:
     st.write('**Choose “Use custom”**')
-    st.image(f'Firmware\\firm5.PNG')
+    st.image(f'Firmware\\firm5.png')
 
 with tab7:
     st.write('**Choose the IMG**')
-    st.image(f'Firmware\\firm6.PNG')
+    st.image(f'Firmware\\firm6.png')
 
 with tab8:
     st.write('**Click on “write”**')
-    st.image(f'Firmware\\firm7.PNG') 
+    st.image(f'Firmware\\firm7.png') 
 
 with tab9:
     st.write('**Click on “yes”**')
-    st.image(f'Firmware\\firm8.PNG') 
+    st.image(f'Firmware\\firm8.png') 
 
 with tab10:
     st.write('**Click on “continue”**')
-    st.image(f'Firmware\\firm9.PNG')  
+    st.image(f'Firmware\\firm9.png')  
 
 with tab11:
     st.subheader("Your'e all set!")
@@ -122,35 +122,35 @@ tab12, tab13, tab14, tab15, tab16, tab17, tab18, tab19, tab20 = st.tabs([' 1', '
 
 with tab12:
      st.write('**Open UniFlash**')
-     st.image(f'Firmware\\gw1.PNG')
+     st.image(f'Firmware\\gw1.png')
 
 with tab13:
      st.write('**Connect the LaunchPad**')
-     st.image(f'Firmware\\gw_c.PNG')
+     st.image(f'Firmware\\gw_c.png')
 
 with tab14:
      st.write('**The LaunchPad should appear**')
-     st.image(f'Firmware\\gw2.PNG')     
+     st.image(f'Firmware\\gw2.png')     
 
 with tab15:
      st.write('**Press "Start"**')
-     st.image(f'Firmware\\gw3.PNG')   
+     st.image(f'Firmware\\gw3.png')   
 
 with tab16:
      st.write('**Press "Browse"**')
-     st.image(f'Firmware\\gw4.PNG')  
+     st.image(f'Firmware\\gw4.png')  
 
 with tab17:
      st.write('**Choose the "gw" file**')
-     st.image(f'Firmware\\gw5.PNG')   
+     st.image(f'Firmware\\gw5.png')   
 
 with tab18:
      st.write('**Press "Load Image"**')
-     st.image(f'Firmware\\gw6.PNG')
+     st.image(f'Firmware\\gw6.png')
 
 with tab19:
      st.write('**Make sure the program loaded successfully**')
-     st.image(f'Firmware\\gw7.PNG')
+     st.image(f'Firmware\\gw7.png')
 
 with tab20:
      st.subheader("Your'e all set!")           
@@ -172,21 +172,21 @@ tab21, tab22, tab23, tab24, tab25, tab26, tab27, tab28, tab29, tab30, tab31, tab
 
 with tab21:
      st.write('**Open UniFlash (Or start a new session)**')
-     st.image(f'Firmware\\sp1.PNG')
+     st.image(f'Firmware\\sp1.png')
 
 with tab22:
      st.write('**Connect the debugger**')
-     st.image(f'Firmware\\debugger1.PNG')
+     st.image(f'Firmware\\debugger1.png')
 
 with tab23:
     st.write('**The debugger should appear**')
-    st.image(f'Firmware\\sp2.PNG')     
+    st.image(f'Firmware\\sp2.png')     
 
 with tab24:
     st.markdown("<style> .big-fonts {font-size:18px !important; color:red} </style>", unsafe_allow_html=True)
     st.write('**Conncet a sensor to the debugger (video below)**')
     st.markdown('<p class="big-fonts"><b>Warning: do not connect the debugger to a sensor when the the batteries are in<b></p>', unsafe_allow_html=True)
-    st.image(f'Firmware\\debugger2_edit.PNG')
+    st.image(f'Firmware\\debugger2_edit.png')
     st.subheader('How to connect a sensor to the debugger:') 
     if st.button('open video'):
         debugger = open(f'Firmware\\debugger.mp4', 'rb')
@@ -195,31 +195,31 @@ with tab24:
 
 with tab25:
      st.write('**In this tab insert the following: "cc2650"**')
-     st.image(f'Firmware\\sp3.PNG')  
+     st.image(f'Firmware\\sp3.png')  
 
 with tab26:
      st.write('**Choose the sencod one**')
-     st.image(f'Firmware\\sp4.PNG')   
+     st.image(f'Firmware\\sp4.png')   
 
 with tab27:
      st.write('**Scroll down and press "Start"**')
-     st.image(f'Firmware\\sp5.PNG')
+     st.image(f'Firmware\\sp5.png')
 
 with tab28:
      st.write('**Press "Browse"**')
-     st.image(f'Firmware\\sp6.PNG')
+     st.image(f'Firmware\\sp6.png')
 
 with tab29:
      st.write('**Choose the "sp" file**')
-     st.image(f'Firmware\\sp7.PNG')
+     st.image(f'Firmware\\sp7.png')
 
 with tab30:
      st.write('**Press "Load Image"**')
-     st.image(f'Firmware\\sp8.PNG')
+     st.image(f'Firmware\\sp8.png')
 
 with tab31:
      st.write('**Make sure the program loaded successfully**')
-     st.image(f'Firmware\\sp9.PNG')
+     st.image(f'Firmware\\sp9.png')
 
 with tab32:
     st.write('**Disconnect the sensor from the debugger**')
