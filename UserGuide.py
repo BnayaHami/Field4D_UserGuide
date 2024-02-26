@@ -20,7 +20,7 @@ st.sidebar.markdown('**IT Support Manager:** bnaya.hami@mail.huji.ac.il')
 st.sidebar.markdown('**Systems Administrator:** nir.averbuch@mail.huji.ac.il')
 st.sidebar.markdown('**CEO:** menachem.moshelion@mail.huji.ac.il')
 
-st.image('fieldarray.PNG', width  = 250)
+st.image('fieldarray.png', width  = 250)
 
 st.markdown('---')
 
