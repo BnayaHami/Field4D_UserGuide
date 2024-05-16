@@ -58,6 +58,10 @@ expander6 = st.expander('Card Reader/Writer (optional)')
 expander6.image(f'Hardware//card.png', width=200)
 expander6.write('Relevant for developers')
 
+expander10 = st.expander('Debugger (optional)')
+expander10.image(f'Hardware//debug.png', width=200)
+expander10.write('Relevant for developers')
+
 st.subheader('Provided equipment:')
 
 expander7 = st.expander('LaunchPad CC2650')
