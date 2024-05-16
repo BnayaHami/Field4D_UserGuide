@@ -35,6 +35,13 @@ st.markdown("<style> .big-fonts {font-size:20px !important;} </style>", unsafe_a
 st.markdown('<p class="big-fonts">Here you have all the information you need to start up the system and start collecting data. On the sidebar you will find different sections about everything you will need for your system</p>', unsafe_allow_html=True)
 
 # st.subheader("Let's get started")
+label = """
+<div style="font-size:24px;">
+    <a href="pages/02_First step.py" target="_self">Let's get started</a>
+</div>
+"""
+# Display the custom HTML
+st.markdown(label, unsafe_allow_html=True)
 st.page_link("pages/02_First step.py", label="Let's get started")
 
 
