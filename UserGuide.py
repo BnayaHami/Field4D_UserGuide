@@ -35,6 +35,8 @@ st.markdown("<style> .big-fonts {font-size:20px !important;} </style>", unsafe_a
 st.markdown('<p class="big-fonts">Here you have all the information you need to start up the system and start collecting data. On the sidebar you will find different sections about everything you will need for your system</p>', unsafe_allow_html=True)
 
 st.subheader("Let's get started")
+st.page_link("02_📄_First step.py", label="Home", icon="🏠")
+
 
 
 # footer
