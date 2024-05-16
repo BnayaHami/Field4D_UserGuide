@@ -35,32 +35,7 @@ st.markdown("<style> .big-fonts {font-size:20px !important;} </style>", unsafe_a
 st.markdown('<p class="big-fonts">Here you have all the information you need to start up the system and start collecting data. On the sidebar you will find different sections about everything you will need for your system</p>', unsafe_allow_html=True)
 
 st.subheader("Let's get started")
-
-
-# Set up navigation
-def navigate(page):
-    st.session_state["page"] = page
-
-if "page" not in st.session_state:
-    st.session_state["page"] = "main"
-
-# Sidebar for navigation
-st.sidebar.title("Navigation")
-if st.sidebar.button("First Step", on_click=navigate, args=("first_step",)):
-    st.balloons()
-if st.sidebar.button("Hardware", on_click=navigate, args=("hardware",)):
-    st.snow()
-
-# Main content
-if st.session_state["page"] == "main":
-    st.title("Welcome to the User Guide")
-elif st.session_state["page"] == "first_step":
-    with open("pages/02_📄_First step.py") as f:
-        exec(f.read())
-elif st.session_state["page"] == "hardware":
-    with open("pages/03_🛠_Hardware.py") as f:
-        exec(f.read())
-
+st.page_link("pages\02_📄_First step.py", label="Page 1", icon="🐄")
 
 
 # footer
