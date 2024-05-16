@@ -34,8 +34,8 @@ st.image('moris.jpg')
 st.markdown("<style> .big-fonts {font-size:20px !important;} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-fonts">Here you have all the information you need to start up the system and start collecting data. On the sidebar you will find different sections about everything you will need for your system</p>', unsafe_allow_html=True)
 
-st.subheader("Let's get started")
-st.page_link("pages/02_First step.py", label="Page 1", icon="1️⃣")
+# st.subheader("Let's get started")
+st.page_link("pages/02_First step.py", label="Let's get started")
 
 
 # footer
