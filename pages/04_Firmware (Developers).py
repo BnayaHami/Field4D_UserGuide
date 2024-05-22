@@ -30,10 +30,11 @@ st.subheader('1. Install Raspberry Pi Operation system (OS) to a microSD card')
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-font">Step 1 </p>', unsafe_allow_html=True)
 st.write('**Download Raspberry Pi imager**')
-st.write('Link: https://www.raspberrypi.com/software/  /nFollow the instructions')
+st.write('Link: https://www.raspberrypi.com/software/')
+st.write('Follow the instructions')
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-font">Step 2 </p>', unsafe_allow_html=True)
-st.write('**Install the OS**')
+st.write('**Install the OS, as described below**')
 
 font_css = """
 <style>
@@ -74,6 +75,7 @@ with tab6:
 
 with tab7:
     st.write('**Choose the IMG**')
+    st.write('**Note:** The relevant IMG is detailed in the email sent to you and might have a different name')
     st.image(f'Firmware/firm6.png')
 
 with tab8:
@@ -102,6 +104,8 @@ st.write('Link: https://www.ti.com/tool/UNIFLASH')
 st.write('If you are struggling with downloading, check the FAQ for more information')
 
 st.write('Note: You should get the LaunchPad and SensorTag firmwares from your provider')
+
+st.write("**IMPORTANT:** Make sure that the LaunchPad and the Debugger aren't connected to the computer simultaneously")
 
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-font">Write LaunchPad firmware </p>', unsafe_allow_html=True)
@@ -219,6 +223,7 @@ with tab30:
 
 with tab31:
      st.write('**Make sure the program loaded successfully**')
+     st.write("**Note:** From this point, you don't have to start the whole proccess again, you can simply connect another sensor to the debugger and press Start")
      st.image(f'Firmware/sp9.png')
 
 with tab32:
