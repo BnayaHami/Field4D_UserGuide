@@ -24,6 +24,8 @@ st.markdown('<p class="big-fontl">✱ <b>for developers<b> </p>', unsafe_allow_h
 st.markdown("<style> .big-fontt {font-size:18px !important;} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-fontt">This section explain how to manage the OS system of the RaspberryPi and the firmwares of the LaunchPad and the sensors</p>', unsafe_allow_html=True)
 
+st.write("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits/drives sensitive to static electricity. Therefore, before any operation, discharge any possible static voltage by touching something metallic to prevent short circuits or fires")
+
 st.write('---')
 
 st.subheader('1. Install Raspberry Pi Operation system (OS) to a microSD card')

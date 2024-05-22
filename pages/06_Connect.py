@@ -22,6 +22,9 @@ st.title('Connect the system')
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-font">This section explain how to conncet all the parts in the system and start collecting data </p>', unsafe_allow_html=True)
 
+st.write("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits/drives sensitive to static electricity. Therefore, before any operation, discharge any possible static voltage by touching something metallic to prevent short circuits or fires")
+
+
 css = '''
 <style>
     .stTabs [data-baseweb="tab-list"] button [data-testid="stMarkdownContainer"] p {
@@ -151,6 +154,7 @@ with tab15:
 with tab16:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
+    st.write("Soon, the STL file of this holder will be available for download")
     st.write("1. Place the sensor into its cover (black)")
     st.write("2. This is the orientation in which the sensor should go into the holder")
     st.write("3. Make sure the light sensor is placed under the hole and exposed to light")
