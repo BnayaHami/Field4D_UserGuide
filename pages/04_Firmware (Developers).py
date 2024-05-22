@@ -180,6 +180,7 @@ with tab21:
 
 with tab22:
      st.write('**Connect the debugger**')
+     st.write("**Note**: The debugger doesn't come with a cable, but it uses a standard micro USB cable. You can use the one that comes with the LaunchPad or any other micro USB cable you have.")
      st.image(f'Firmware//debugger1.png')
 
 with tab23:
@@ -223,11 +224,12 @@ with tab30:
 
 with tab31:
      st.write('**Make sure the program loaded successfully**')
-     st.write("**Note:** From this point, you don't have to start the whole proccess again, you can simply connect another sensor to the debugger and press Start")
+     st.write("**Note:** From this point, you don't have to start the whole proccess again, you can simply connect another sensor to the debugger and press 'Load Image'")
      st.image(f'Firmware/sp9.png')
 
 with tab32:
     st.write('**Disconnect the sensor from the debugger**')
+    st.write('At this point, all the sensors should be written with the firmware. In the next sections, you will learn how to configure sensor settings and start an experiment')
     debugger2 = open(f'Firmware/debugger2.mp4', 'rb')
     video_bytes2 = debugger2.read() 
     st.video(video_bytes2)     

@@ -36,7 +36,8 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10= st.tabs(['1', '2', 
 
 with tab1:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Insert the microSD card into its slot <b></p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-fonts"><b>Insert the microSD card into its slot in the Raspberry Pi<b></p>', unsafe_allow_html=True)
+    st.write('The Raspberry Pi constitutes the core of the system and is responsible for collecting data from the sensors and sending it to the dashboard webapp. The microSD card contains the operating system and the software required for the system to function.')
     st.image(f'Connect//sd_c.png')
 
 with tab2:
@@ -66,9 +67,9 @@ with tab6:
     st.markdown('<p class="big-fontsh">Here you can control your sensors, start/end experiments, and see your data</p>',unsafe_allow_html=True)
     st.markdown('<p class="big-fontsh">A quick tutorial for the webapp is on the next slide</p>',unsafe_allow_html=True)
     with st.expander("How to get into the dashboard webapp?"):
-        st.write("""The dashboard webapp whould be your Raspberry PI's IP with the port 3000
-                 /n For example: 127.0.0.1:3000
-                 /n Pay attention that the computer you are working from should be using is on the same network as your Raspberry PI """)
+        st.write("The dashboard webapp whould be your Raspberry PI's IP with the port 3000")
+        st.write("For example: 127.0.0.1:3000")
+        st.write("Pay attention that the computer you are working from should be using is on the same network as your Raspberry PI")
     with st.expander("How to get your Pi's IP?"):
         st.write("""You should assign a static IP to your Raspberry Pi.
                     If you are working within a university setting, It's advisable to seek assistance from your university's
@@ -131,10 +132,9 @@ st.write('---')
 
 st.header('Setup')
 
-st.write("""**Note**: this is our suggestion for placing the sensors in a greenhouse:  /nTwo sensors are assigned for each plant,
-one of them is in the height of the canopy (gradually raised up during the plant's growth),
-and the second one at a high place above the plant.  /nWe do that in order to measure meteorological data in the plant's
-close environment and the layer above that affects it. We are using clamps and metal poles to place the sensors, as will be shown below""")
+st.write("**Note**: this is our suggestion for placing the sensors in a greenhouse:")
+st.write("Two sensors are assigned for each plant, one of them is in the height of the canopy (gradually raised up during the plant's growth), and the second one at a high place above the plant")
+st.write("We do that in order to measure meteorological data in the plant's close environment and the layer above that affects it. We are using clamps and metal poles to place the sensors, as will be shown below")
 
 tab14, tab15, tab16, tab17, tab18, tab19 = st.tabs(['1', '2', '3', '4', '5', '6'])
 
@@ -151,23 +151,19 @@ with tab15:
 with tab16:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
-    st.write("""
-    1. Place the sensor into its cover (black)
-    /n2. This is the orientation in which the sensor should go into the holder
-    /n3. Make sure the light sensor is placed under the hole and exposed to light
-    /n4. Connect the sensor to the batteries case using a zip tie
-    """)
+    st.write("1. Place the sensor into its cover (black)")
+    st.write("2. This is the orientation in which the sensor should go into the holder")
+    st.write("3. Make sure the light sensor is placed under the hole and exposed to light")
+    st.write("4. Connect the sensor to the batteries case using a zip tie")
     st.image(f'Connect//sp_place.png')
 
 with tab17:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Connect the sensor to the pole<b></p>', unsafe_allow_html=True)
-    st.write("""
-    1. Make a hole in the pole, and pass a metal string through the holes of the holder and the pole to tie them together
-    /n2. That's how it should look like
-    /n3. Insert a cover (cardboard or plastic) to the holder's slot. This is done to prevent the temperature sensor from heating and give a wrong reading
-    /n**Note:** Make sure you place the sensor so the arrow on the holder points north, to enable illumination of the light sensor and cover the other sensors
-    """)
+    st.write("1. Make a hole in the pole, and pass a metal string through the holes of the holder and the pole to tie them together")
+    st.write("2. That's how it should look like")
+    st.write("3. Insert a cover (cardboard or plastic) to the holder's slot. This is done to prevent the temperature sensor from heating and give a wrong reading")
+    st.write("**Note:** Make sure you place the sensor so the arrow on the holder points north, to enable illumination of the light sensor and cover the other sensors")
     st.image(f'Connect//holder.png')
 
 with tab18:
