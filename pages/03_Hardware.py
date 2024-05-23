@@ -76,10 +76,11 @@ expander9.write('Including the Raspberry Pi Operating system')
 
 st.write('---')
 
-
 st.markdown('<p class="big-font"><b>Texas Instruments CC2650stk SensorTag component Overview:<b></p>', unsafe_allow_html=True)
 expander11 = st.expander('Click here to see')
 expander11.image(f'Hardware//sensortag.png')
+
+st.write('---')
 
 st.markdown('<p class="big-font"><b>A basic Illustration of the system<b></p>', unsafe_allow_html=True)
 st.image(f'Hardware//schema.png')
