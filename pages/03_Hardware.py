@@ -75,9 +75,9 @@ expander9.image(f'Hardware//sd.png', width=200)
 expander9.write('Including the Raspberry Pi Operating system')
 
 st.subheader('Texas Instruments CC2650stk SensorTag, Component Overview:')
-st.image(f'Hardware//sensortag.png', width=200)
-st.image(f'Hardware//sensortag2.png', width=200)
-st.image(f'Hardware//sensortag3.png', width=200)
+st.image(f'Hardware//sensortag.png')
+st.image(f'Hardware//sensortag2.png')
+st.image(f'Hardware//sensortag3.png')
 
 
 
