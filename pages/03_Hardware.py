@@ -76,6 +76,9 @@ expander9.write('Including the Raspberry Pi Operating system')
 
 st.subheader('Texas Instruments CC2650stk SensorTag, Component Overview:')
 st.image(f'Hardware//sensortag.png', width=200)
+st.image(f'Hardware//sensortag2.png', width=200)
+st.image(f'Hardware//sensortag3.png', width=200)
+
 
 
 # st.markdown("<style> .big-font {font-size:20px !important;color:black} </style>", unsafe_allow_html=True)
