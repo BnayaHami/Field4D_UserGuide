@@ -74,11 +74,11 @@ expander9 = st.expander('MicroSD')
 expander9.image(f'Hardware//sd.png', width=200)
 expander9.write('Including the Raspberry Pi Operating system')
 
-st.subheader('Texas Instruments CC2650stk SensorTag, Component Overview:')
+st.markdown('<p class="big-font"><b>Texas Instruments CC2650stk SensorTag, Component Overview:<b></p>', unsafe_allow_html=True)
 st.image(f'Hardware//sensortag.png')
-st.image(f'Hardware//sensortag2.png')
-st.image(f'Hardware//sensortag3.png')
 
+st.markdown('<p class="big-font"><b>A basic Illustration of the system<b></p>', unsafe_allow_html=True)
+st.image(f'Hardware//schema.png')
 
 
 # st.markdown("<style> .big-font {font-size:20px !important;color:black} </style>", unsafe_allow_html=True)
