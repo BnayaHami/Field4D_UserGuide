@@ -85,6 +85,7 @@ st.write('---')
 st.markdown('<p class="big-font"><b>A basic Illustration of the system<b></p>', unsafe_allow_html=True)
 st.image(f'Hardware//schema.png')
 
+st.write('---')
 st.page_link("pages/04_Firmware (Developers).py", label="For developers - continue to Firmware")
 st.page_link("pages/06_Connect.py", label="For regular users - continue to Connect")
 

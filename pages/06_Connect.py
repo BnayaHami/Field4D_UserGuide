@@ -121,8 +121,8 @@ with tab8:
 with tab9:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Press the right bottom to send a ping<b></p>', unsafe_allow_html=True)
-    st.markdown('<p class="big-fontsh">Note: It usually takes about 1-2 minutes for the sensor to be recognized by the system and be able to send a ping. we recommend to insert the batteries to all of the sensors and then start sending pings</p>', unsafe_allow_html=True) 
-    st.markdown('<p class="big-fontsh">IMPORTANT: There are two buttons, one on each side of the sensor. Ensure you press the correct button, which is located on the right side of the sensor when it is facing up. The other button resets the sensor and will cause a delay of a few minutes before the sensor is recognized by the system again</p>', unsafe_allow_html=True) 
+    st.markdown('<p class="big-fontsh">**Note:** It usually takes about 1-2 minutes for the sensor to be recognized by the system and be able to send a ping. we recommend to insert the batteries to all of the sensors and then start sending pings</p>', unsafe_allow_html=True) 
+    st.markdown('<p class="big-fontsh">**IMPORTANT:** There are two buttons, one on each side of the sensor. Ensure you press the correct button, which is located on the right side of the sensor when it is facing up. The other button resets the sensor and will cause a delay of a few minutes before the sensor is recognized by the system again</p>', unsafe_allow_html=True) 
     st.image(f'Connect//ping.png')
 
 
