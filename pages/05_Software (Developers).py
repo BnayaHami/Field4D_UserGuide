@@ -10,7 +10,7 @@ import base64
 import webbrowser
 
 # setting page conf
-st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered")
+st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered", initial_sidebar_state = 'expanded')
 
 st.sidebar.markdown("# Contact us")
 st.sidebar.markdown('**IT Support Manager:** bnaya.hami@mail.huji.ac.il')
