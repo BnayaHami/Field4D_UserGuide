@@ -52,6 +52,9 @@ st.markdown("""<p class="big-fontsh">Explains how to conncet all the parts in th
 st.markdown("""<p class="big-fontshl"><b>FAQ:<b></p>""", unsafe_allow_html=True)
 st.markdown("""<p class="big-fontsh">Addresses common questions and provides additional information</p>""", unsafe_allow_html=True)
 
+st.page_link("pages/03_Hardware.py", label="Continue")
+
+
 
 
 # st.image(f"images\\ping.PNG")

@@ -104,6 +104,7 @@ st.subheader('2. Write the LaunchPad and the SensorTag firmwares')
 st.write('**Download UniFlash software**')
 st.write('Link: https://www.ti.com/tool/UNIFLASH')
 st.write('If you are struggling with downloading, check the FAQ for more information')
+st.page_link("pages/07_FAQ.py", label="FAQ")
 
 st.write('Note: You should get the LaunchPad and SensorTag firmwares from your provider')
 
@@ -240,6 +241,8 @@ with tab33:
     st.subheader("Your'e all set!")
 
 
+st.page_link("pages/06_Connect.py", label="Continue to Connect")
+st.markdown('Check out the Software section for additional information if needed')
 
 
      
