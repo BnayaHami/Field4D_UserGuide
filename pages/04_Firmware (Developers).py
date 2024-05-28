@@ -148,6 +148,7 @@ with tab16:
      st.image(f'Firmware/gw4.png')  
 
 with tab17:
+     st.markdown('<p class="big-fontt"><b>Choose the "gw" file. Ensure that you select the "gw" file associated with the LaunchPad, not the "sp" file, which belongs to the SensorTag</b></p>', unsafe_allow_html=True)
      st.subheader('**Choose the "gw" file. Ensure that you select the "gw" file associated with the LaunchPad, not the "sp" file, which belongs to the SensorTag**')
      st.image(f'Firmware/gw5.png')   
 
