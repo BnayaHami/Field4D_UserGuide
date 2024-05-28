@@ -98,7 +98,7 @@ with tab11:
 # Install the launchpad and the sensortag hardwares
 
 st.subheader('')
-st.subheader('2. Write the LaunchPad and the SensorTag firmwares')
+st.subheader('2. Flash the LaunchPad and the SensorTag firmwares')
 
 
 st.write('**Download UniFlash software**')
@@ -111,7 +111,7 @@ st.write('**Note:** You should get the LaunchPad and SensorTag firmwares from yo
 st.write("**IMPORTANT:** Make sure that the LaunchPad and the Debugger aren't connected to the computer simultaneously")
 
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
-st.markdown('<p class="big-font">Write LaunchPad firmware </p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">Flash LaunchPad firmware </p>', unsafe_allow_html=True)
 
 font_css2 = """
 <style>
@@ -148,7 +148,7 @@ with tab16:
      st.image(f'Firmware/gw4.png')  
 
 with tab17:
-     st.write('**Choose the "gw" file**')
+     st.subheader('**Choose the "gw" file. Ensure that you select the "gw" file associated with the LaunchPad, not the "sp" file, which belongs to the SensorTag**')
      st.image(f'Firmware/gw5.png')   
 
 with tab18:
@@ -163,7 +163,7 @@ with tab20:
      st.subheader("Your'e all set!")           
 
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
-st.markdown('<p class="big-font">Write SensorTag firmware </p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">Flash SensorTag firmware </p>', unsafe_allow_html=True)
 
 css = '''
 <style>
@@ -218,7 +218,7 @@ with tab28:
      st.image(f'Firmware/sp6.png')
 
 with tab29:
-     st.write('**Choose the "sp" file**')
+     st.subheader('**Choose the "sp" file. Ensure that you select the "sp" file associated with the SensorTag, not the "gw" file, which belongs to the LaunchPad**')
      st.image(f'Firmware/sp7.png')
 
 with tab30:
