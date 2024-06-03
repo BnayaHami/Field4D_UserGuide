@@ -65,6 +65,21 @@ with tab5:
 
 with tab6:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+    st.markdown('<p class="big-fonts"><b>While the dashboard webapp is open, Connect the batteries to the SensorTag<b></p>', unsafe_allow_html=True)    
+    st.image(f'Connect//con_bat.png')
+
+with tab7:
+    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+    st.markdown('<p class="big-fonts"><b>Press the right bottom to send a ping<b></p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-fontsh">Note: It usually takes about 1-2 minutes for the sensor to be recognized by the system and be able to send a ping. we recommend to insert the batteries to all of the sensors and then start sending pings</p>', unsafe_allow_html=True) 
+    st.markdown('<p class="big-fontsh">IMPORTANT: There are two buttons, one on each side of the sensor. Ensure you press the correct button, which is located on the right side of the sensor when it is facing up. The other button resets the sensor and will cause a delay of a few minutes before the sensor is recognized by the system again</p>', unsafe_allow_html=True) 
+    st.image(f'Connect//ping.png')
+
+    
+
+
+with tab8:
+    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>On your browser, open the dashboard webapp<b></p>', unsafe_allow_html=True)  
     st.markdown("<style> .big-fontsh {font-size:18px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fontsh">Here you can control your sensors, start/end experiments, and see your data</p>',unsafe_allow_html=True)
@@ -81,7 +96,7 @@ with tab6:
     st.image(f'Connect//dashboard.png')
 
 
-with tab7:
+with tab9:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Tutorial for the dashboard website<b></p>', unsafe_allow_html=True) 
     tab71, tab72, tab73, tab74, tab75, tab76, tab77, tab78, tab79, tab80, tab81, tab82 = st.tabs(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'])
@@ -111,20 +126,6 @@ with tab7:
         st.image(f'Connect//dashboard_11.png')
     with tab82:
         st.image(f'Connect//dashboard_12.png')
-
-
-with tab8:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>While the dashboard webapp is open, Connect the batteries to the SensorTag<b></p>', unsafe_allow_html=True)    
-    st.image(f'Connect//con_bat.png')
-
-with tab9:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Press the right bottom to send a ping<b></p>', unsafe_allow_html=True)
-    st.markdown('<p class="big-fontsh">**Note:** It usually takes about 1-2 minutes for the sensor to be recognized by the system and be able to send a ping. we recommend to insert the batteries to all of the sensors and then start sending pings</p>', unsafe_allow_html=True) 
-    st.markdown('<p class="big-fontsh">**IMPORTANT:** There are two buttons, one on each side of the sensor. Ensure you press the correct button, which is located on the right side of the sensor when it is facing up. The other button resets the sensor and will cause a delay of a few minutes before the sensor is recognized by the system again</p>', unsafe_allow_html=True) 
-    st.image(f'Connect//ping.png')
-
 
 with tab10:
     st.markdown('<p class="big-fonts">Begin defining your sensors and experiment information as outlined in the tutorial</p>', unsafe_allow_html=True)

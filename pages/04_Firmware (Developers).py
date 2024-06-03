@@ -148,7 +148,7 @@ with tab16:
      st.image(f'Firmware/gw4.png')  
 
 with tab17:
-     st.markdown('<p class="big-fontt"><b>Choose the "gw" file. Ensure that you select the "gw" file associated with the LaunchPad, not the "sp" file, which belongs to the SensorTag</b></p>', unsafe_allow_html=True)
+     st.markdown('<p class="big-fontt"><b>IMPORTANT: Choose the "gw" file. Ensure that you select the "gw" file associated with the LaunchPad, not the "sp" file, which belongs to the SensorTag</b></p>', unsafe_allow_html=True)
      st.image(f'Firmware/gw5.png')   
 
 with tab18:
@@ -218,7 +218,7 @@ with tab28:
      st.image(f'Firmware/sp6.png')
 
 with tab29:
-     st.markdown('<p class="big-fontt"><b>Choose the "sp" file. Ensure that you select the "sp" file associated with the SensorTag, not the "gw" file, which belongs to the LaunchPad</b></p>', unsafe_allow_html=True)
+     st.markdown('<p class="big-fontt"><b>IMPORTANT: Choose the "sp" file. Ensure that you select the "sp" file associated with the SensorTag, not the "gw" file, which belongs to the LaunchPad</b></p>', unsafe_allow_html=True)
      st.image(f'Firmware/sp7.png')
 
 with tab30:
