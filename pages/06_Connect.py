@@ -72,7 +72,7 @@ with tab7:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Press the right bottom to send a ping<b></p>', unsafe_allow_html=True)
     with st.expander("How this works?"):
-        st.write("The SensorTag is a wireless device, and the ping button is used to send a signal to the Raspberry Pi. This signal is used to identify the sensor and connect it to the system")
+        st.write("The SensorTag is a wireless device, and the ping button is used to send a signal to the Raspberry Pi. This signal is used to identify the sensor and connect it to the system. Next, you will be able to assign the sensor a Name/Location/Label etc.")
     st.markdown('**Note:** It usually takes about 1-2 minutes for the sensor to be recognized by the system and be able to send a ping. we recommend to insert the batteries to all of the sensors and then start sending pings') 
     st.markdown('**IMPORTANT:** There are two buttons, one on each side of the sensor. Ensure you press the correct button, which is located on the right side of the sensor when it is facing up. The other button resets the sensor and will cause a delay of a few minutes before the sensor is recognized by the system again') 
     st.image(f'Connect//ping.png')
@@ -88,9 +88,7 @@ with tab8:
         st.write("For example: 127.0.0.1:3000")
         st.write("Pay attention that the computer you are working from should be using is on the same network as your Raspberry PI")
     with st.expander("How to get your Pi's IP?"):
-        st.write("""You should assign a static IP to your Raspberry Pi.
-                    If you are working within a university setting, It's advisable to seek assistance from your university's
-                    IT department for this process.""")
+        st.write("""You should assign a static IP to your Raspberry Pi. If you are working within a university or any closed or monitored network, it is advisable to seek assistance from the IT department for this process.""")
     st.image(f'Connect//dashboard.png')
 
 
