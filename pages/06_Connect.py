@@ -65,7 +65,7 @@ with tab5:
 
 with tab6:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>While the dashboard webapp is open, Connect the batteries to the SensorTag<b></p>', unsafe_allow_html=True)    
+    st.markdown('<p class="big-fonts"><b>Connect the batteries to the SensorTag<b></p>', unsafe_allow_html=True)    
     st.image(f'Connect//con_bat.png')
 
 with tab7:
@@ -74,9 +74,6 @@ with tab7:
     st.markdown('<p class="big-fontsh">Note: It usually takes about 1-2 minutes for the sensor to be recognized by the system and be able to send a ping. we recommend to insert the batteries to all of the sensors and then start sending pings</p>', unsafe_allow_html=True) 
     st.markdown('<p class="big-fontsh">IMPORTANT: There are two buttons, one on each side of the sensor. Ensure you press the correct button, which is located on the right side of the sensor when it is facing up. The other button resets the sensor and will cause a delay of a few minutes before the sensor is recognized by the system again</p>', unsafe_allow_html=True) 
     st.image(f'Connect//ping.png')
-
-    
-
 
 with tab8:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
@@ -92,7 +89,6 @@ with tab8:
         st.write("""You should assign a static IP to your Raspberry Pi.
                     If you are working within a university setting, It's advisable to seek assistance from your university's
                     IT department for this process.""")
-    # future: Open the website
     st.image(f'Connect//dashboard.png')
 
 
@@ -131,8 +127,6 @@ with tab10:
     st.markdown('<p class="big-fonts">Begin defining your sensors and experiment information as outlined in the tutorial</p>', unsafe_allow_html=True)
     st.markdown('<p class="big-fonts">You are ready to begin your experiment! Once you start, ensure that you position your sensors according to their allocated locations and begin data collection</p>', unsafe_allow_html=True) 
     st.markdown('<p class="big-fonts">Check out the section below for our recommendations on positioning the sensors to achieve the most accurate measurements</p>', unsafe_allow_html=True)
-
-
 
 st.write('---')
 
