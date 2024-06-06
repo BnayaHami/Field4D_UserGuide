@@ -181,6 +181,8 @@ with tab19:
     st.markdown('<p class="big-fonts"><b>Two heights sensors<b></p>', unsafe_allow_html=True)  
     st.image(f'Connect//two_h.png')   
 
+st.write('hiiii')
+
 st.write('---')
 
 ## Title of the Streamlit app
@@ -194,7 +196,7 @@ stl_file_path_2 = os.path.join(os.path.dirname(__file__), '../connect/Base_With_
 mesh1 = mesh.Mesh.from_file(stl_file_path_1)
 mesh2 = mesh.Mesh.from_file(stl_file_path_2)
 
-# Extract the vertices and faces for the first STL file
+# Extract the vertices and  faces for the first STL file
 vertices1 = mesh1.points.reshape(-1, 3)
 faces1 = np.arange(len(vertices1)).reshape(-1, 3)
 
