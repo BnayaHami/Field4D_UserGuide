@@ -8,6 +8,11 @@ from PIL import ImageFont
 import os
 import base64
 
+from stl import mesh
+from mpl_toolkits import mplot3d
+from matplotlib import pyplot
+import plotly.graph_objects as go
+
 # setting page conf
 st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered", initial_sidebar_state = 'expanded')
 
@@ -104,7 +109,6 @@ with tab9:
         st.image(f'Connect//dashboard_3.png')
     with tab74:
         st.image(f'Connect//dashboard_4.png')
-        st.markdown('<p class="big-fonts"><b>Note: Ping button is shown on the following section<b></p>', unsafe_allow_html=True)
     with tab75:
         st.image(f'Connect//dashboard_5.png')
     with tab76:
@@ -177,7 +181,101 @@ with tab19:
     st.markdown('<p class="big-fonts"><b>Two heights sensors<b></p>', unsafe_allow_html=True)  
     st.image(f'Connect//two_h.png')   
 
+st.write('---')
 
+## Title of the Streamlit app
+st.subheader("STL Files for 3D Printing")
+
+# Paths to the predefined STL files
+stl_file_path_1 = os.path.join(os.path.dirname(__file__), '../connect/Base_SP.stl')
+stl_file_path_2 = os.path.join(os.path.dirname(__file__), '../connect/Base_With_Cover.stl')
+
+# Load the STL files
+mesh1 = mesh.Mesh.from_file(stl_file_path_1)
+mesh2 = mesh.Mesh.from_file(stl_file_path_2)
+
+# Extract the vertices and faces for the first STL file
+vertices1 = mesh1.points.reshape(-1, 3)
+faces1 = np.arange(len(vertices1)).reshape(-1, 3)
+
+# Extract the vertices and faces for the second STL file
+vertices2 = mesh2.points.reshape(-1, 3)
+faces2 = np.arange(len(vertices2)).reshape(-1, 3)
+
+# Create Plotly figures
+fig1 = go.Figure(data=[go.Mesh3d(
+    x=vertices1[:, 0],
+    y=vertices1[:, 1],
+    z=vertices1[:, 2],
+    i=faces1[:, 0],
+    j=faces1[:, 1],
+    k=faces1[:, 2],
+    color='grey',
+    opacity=1,
+    showscale=False,
+    name='Base_SP'
+)])
+
+fig2 = go.Figure(data=[go.Mesh3d(
+    x=vertices2[:, 0],
+    y=vertices2[:, 1],
+    z=vertices2[:, 2],
+    i=faces2[:, 0],
+    j=faces2[:, 1],
+    k=faces2[:, 2],
+    color='grey',
+    opacity=1,
+    showscale=False,
+    name='Base_With_Cover'
+)])
+
+# Update the layout for better visualization and aspect ratio
+for fig in [fig1, fig2]:
+    fig.update_layout(
+        scene=dict(
+            xaxis=dict(visible=False),
+            yaxis=dict(visible=False),
+            zaxis=dict(visible=False),
+            aspectmode='data'
+        ),
+        margin=dict(r=0, l=0, b=0, t=0)
+    )
+
+# Create tabs for navigation
+tab101, tab102 = st.tabs(["Ver1", "Ver2"])
+
+with tab101:
+    st.write('Basic SensorTag Holder')
+    st.plotly_chart(fig1)
+    with open(stl_file_path_1, "rb") as file1:
+        st.download_button(
+            label="Download STL file",
+            data=file1,
+            file_name="Base_SP.stl",
+            mime="application/octet-stream"
+        )
+
+with tab102:
+    st.write('SensorTag Holder with built-in Cover')
+    st.plotly_chart(fig2)
+    with open(stl_file_path_2, "rb") as file2:
+        st.download_button(
+            label="Download STL file",
+            data=file2,
+            file_name="Base_With_Cover.stl",
+            mime="application/octet-stream"
+        )
+
+# Update the layout for better visualization and aspect ratio
+fig.update_layout(
+    scene=dict(
+        xaxis=dict(visible=False),
+        yaxis=dict(visible=False),
+        zaxis=dict(visible=False),
+        aspectmode='data'
+    ),
+    margin=dict(r=0, l=0, b=0, t=0)
+)
 
 
 

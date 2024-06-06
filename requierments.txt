@@ -3,6 +3,7 @@ image==1.5.33
 matplotlib==3.5.1
 markdownlit==0.0.5
 numpy==1.22.3
+numpy-stl==2.16.0
 pandas==1.4.3
 pandas-bokeh==0.5.5
 pandas-datareader==0.10.0
