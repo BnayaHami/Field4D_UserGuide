@@ -8,6 +8,7 @@ from PIL import ImageFont
 import os
 import base64
 
+import stl
 from stl import mesh
 from mpl_toolkits import mplot3d
 from matplotlib import pyplot
