@@ -8,7 +8,15 @@ from PIL import ImageFont
 import os
 import base64
 
-from stl import mesh
+import subprocess
+import sys
+
+try:
+    from stl import mesh
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "numpy-stl"])
+    from stl import mesh
+    
 from mpl_toolkits import mplot3d
 from matplotlib import pyplot
 import plotly.graph_objects as go
