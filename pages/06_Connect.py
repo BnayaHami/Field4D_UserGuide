@@ -10,7 +10,7 @@ import base64
 
 
 # Your existing imports and code
-from stl import mesh
+from stl.mesh import Mesh
 from mpl_toolkits import mplot3d
 from matplotlib import pyplot as plt
 import plotly.graph_objects as go
