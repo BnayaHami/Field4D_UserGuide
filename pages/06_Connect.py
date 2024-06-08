@@ -8,18 +8,6 @@ from PIL import ImageFont
 import os
 import base64
 
-import subprocess
-import sys
-
-# Function to install package
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-# Check if numpy-stl is installed, if not install it
-try:
-    import stl
-except ImportError:
-    install("numpy-stl")
 
 # Your existing imports and code
 from stl import mesh
