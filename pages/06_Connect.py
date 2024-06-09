@@ -189,8 +189,8 @@ st.write('---')
 st.subheader("STL Files for 3D Printing")
 
 # Paths to the predefined STL files
-stl_file_path_1 = os.path.join(os.path.dirname(__file__), '../connect/Base_SP.stl')
-stl_file_path_2 = os.path.join(os.path.dirname(__file__), '../connect/Base_With_Cover.stl')
+stl_file_path_1 = os.path.join(os.path.dirname(__file__), 'Base_SP.stl')
+stl_file_path_2 = os.path.join(os.path.dirname(__file__), 'Base_With_Cover.stl')
 
 # Load the STL files
 mesh1 = mesh.Mesh.from_file(stl_file_path_1)
