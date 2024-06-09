@@ -8,6 +8,8 @@ from PIL import ImageFont
 import os
 import base64
 
+from streamlit_extras.stodo import to_do
+
 # setting page conf
 st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered", initial_sidebar_state = 'expanded')
 
@@ -75,6 +77,48 @@ expander9.image(f'Hardware//sd.png', width=200)
 expander9.write('Including the Raspberry Pi Operating system')
 
 st.write('---')
+
+expander12 = st.expander('Equipment list')
+with expander12:
+    to_do(
+        [(st.write, "**RaspberryPi**")],
+        "Pi",
+    )
+    to_do(
+        [(st.write, "**RaspberryPi power supply**")],
+        "Pi_supply",
+    )
+    to_do(
+        [(st.write, "**Micro-USB cable**")],
+        "USB",
+    )
+    to_do(
+        [(st.write, "**Network cable**")],
+        "network",
+    )
+    to_do(
+        [(st.write, "**AA batteries**")],
+        "AA",
+    )
+    to_do(
+        [(st.write, "**Card Reader/Writer (optional)**")],
+        "card",
+    )
+    to_do(
+        [(st.write, "**LaunchPad CC2650**")],
+        "gw",
+    )
+    to_do(
+        [(st.write, "**Sensortag cc2650stk**")],
+        "sp",
+    )
+    to_do(
+        [(st.write, "**MicroSD**")],
+        "sd",
+    )
+
+st.write('---')
+
 
 st.markdown('<p class="big-font"><b>Texas Instruments CC2650stk SensorTag component Overview:<b></p>', unsafe_allow_html=True)
 expander11 = st.expander('Click here to see')
