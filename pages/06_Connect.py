@@ -8,7 +8,7 @@ from PIL import ImageFont
 import os
 import base64
 
-import trimesh
+import meshio
 from matplotlib import pyplot as plt
 import plotly.graph_objects as go
 
@@ -190,17 +190,17 @@ st.subheader("STL Files for 3D Printing")
 stl_file_path_1 = os.path.join(os.path.dirname(__file__), '../connect/Base_SP.stl')
 stl_file_path_2 = os.path.join(os.path.dirname(__file__), '../connect/Base_With_Cover.stl')
 
-# Load the STL files using trimesh
-mesh1 = trimesh.load(stl_file_path_1)
-mesh2 = trimesh.load(stl_file_path_2)
+# Load the STL files using meshio
+mesh1 = meshio.read(stl_file_path_1)
+mesh2 = meshio.read(stl_file_path_2)
 
 # Extract the vertices and faces for the first STL file
-vertices1 = mesh1.vertices
-faces1 = mesh1.faces
+vertices1 = mesh1.points
+faces1 = mesh1.cells_dict['triangle']
 
 # Extract the vertices and faces for the second STL file
-vertices2 = mesh2.vertices
-faces2 = mesh2.faces
+vertices2 = mesh2.points
+faces2 = mesh2.cells_dict['triangle']
 
 # Create Plotly figures
 fig1 = go.Figure(data=[go.Mesh3d(
