@@ -79,6 +79,8 @@ expander10.write('Relevant for developers')
 
 st.write('---')
 
+st.subheader('Appendices')
+
 st.markdown('<p class="big-font"><b>For your convenience, here is an equipment list<b></p>', unsafe_allow_html=True)
 
 expander12 = st.expander('Equipment list')
