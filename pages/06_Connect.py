@@ -9,8 +9,27 @@ import os
 import base64
 
 
-# Your existing imports and code
-from stl import mesh
+import subprocess
+import sys
+
+
+def install_package(package):
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    except subprocess.CalledProcessError as e:
+        st.error(f"Error installing package {package}: {e}")
+
+try:
+    from stl import mesh
+except ModuleNotFoundError:
+    st.warning("Installing missing package 'numpy-stl'...")
+    install_package("numpy-stl")
+    try:
+        from stl import mesh
+    except ModuleNotFoundError:
+        st.error("Failed to install 'numpy-stl'. Please check your permissions and try again.")
+
+# Your existing imports and code...
 from mpl_toolkits import mplot3d
 from matplotlib import pyplot as plt
 import plotly.graph_objects as go
