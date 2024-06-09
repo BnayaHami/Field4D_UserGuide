@@ -10,7 +10,7 @@ pandas-bokeh==0.5.5
 pandas-datareader==0.10.0
 Pillow==9.2.0
 plotly==5.17.0
-python==3.9.0
+python==3.12.3
 python-git==2018.2.1
 streamlit==1.31.1
 streamlit-camera-input-live==0.2.0
