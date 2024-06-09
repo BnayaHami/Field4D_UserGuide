@@ -78,6 +78,8 @@ expander9.write('Including the Raspberry Pi Operating system')
 
 st.write('---')
 
+st.markdown('<p class="big-font"><b>For your convenience, here is an equipment list<b></p>', unsafe_allow_html=True)
+
 expander12 = st.expander('Equipment list')
 with expander12:
     to_do(
