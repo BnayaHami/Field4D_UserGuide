@@ -126,8 +126,6 @@ with expander12:
         "deb",
     )
 
-st.write('---')
-
 
 st.markdown('<p class="big-font"><b>Texas Instruments CC2650stk SensorTag component Overview:<b></p>', unsafe_allow_html=True)
 expander11 = st.expander('Click here to see')
