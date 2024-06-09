@@ -10,7 +10,6 @@ import base64
 
 
 # Your existing imports and code
-import stl
 from stl import mesh
 from mpl_toolkits import mplot3d
 from matplotlib import pyplot as plt
