@@ -1,4 +1,4 @@
-google-api-python-client==2.129.0
+google==3.0.0
 image==1.5.33
 matplotlib==3.5.1
 markdownlit==0.0.5
@@ -9,7 +9,6 @@ pandas==1.4.3
 pandas-bokeh==0.5.5
 pandas-datareader==0.10.0
 Pillow==9.2.0
-meshio==5.3.4
 plotly==5.17.0
 python==3.12.3
 python-git==2018.2.1
