@@ -121,7 +121,7 @@ with expander12:
     )
     to_do(
         [(st.write, "**Debugger (optional)**")],
-        "card",
+        "deb",
     )
 
 st.write('---')
