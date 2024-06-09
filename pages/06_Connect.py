@@ -8,9 +8,7 @@ from PIL import ImageFont
 import os
 import base64
 
-
-from stl import mesh
-from mpl_toolkits import mplot3d
+import trimesh
 from matplotlib import pyplot as plt
 import plotly.graph_objects as go
 
@@ -182,28 +180,27 @@ with tab19:
     st.markdown('<p class="big-fonts"><b>Two heights sensors<b></p>', unsafe_allow_html=True)  
     st.image(f'Connect//two_h.png')   
 
-st.write('hiiii')
 
 st.write('---')
 
-## Title of the Streamlit app
+# Title of the Streamlit app
 st.subheader("STL Files for 3D Printing")
 
 # Paths to the predefined STL files
 stl_file_path_1 = os.path.join(os.path.dirname(__file__), '../connect/Base_SP.stl')
 stl_file_path_2 = os.path.join(os.path.dirname(__file__), '../connect/Base_With_Cover.stl')
 
-# Load the STL files
-mesh1 = mesh.Mesh.from_file(stl_file_path_1)
-mesh2 = mesh.Mesh.from_file(stl_file_path_2)
+# Load the STL files using trimesh
+mesh1 = trimesh.load(stl_file_path_1)
+mesh2 = trimesh.load(stl_file_path_2)
 
-# Extract the vertices and  faces for the first STL file
-vertices1 = mesh1.points.reshape(-1, 3)
-faces1 = np.arange(len(vertices1)).reshape(-1, 3)
+# Extract the vertices and faces for the first STL file
+vertices1 = mesh1.vertices
+faces1 = mesh1.faces
 
 # Extract the vertices and faces for the second STL file
-vertices2 = mesh2.points.reshape(-1, 3)
-faces2 = np.arange(len(vertices2)).reshape(-1, 3)
+vertices2 = mesh2.vertices
+faces2 = mesh2.faces
 
 # Create Plotly figures
 fig1 = go.Figure(data=[go.Mesh3d(
@@ -268,17 +265,6 @@ with tab102:
             file_name="Base_With_Cover.stl",
             mime="application/octet-stream"
         )
-
-# Update the layout for better visualization and aspect ratio
-fig.update_layout(
-    scene=dict(
-        xaxis=dict(visible=False),
-        yaxis=dict(visible=False),
-        zaxis=dict(visible=False),
-        aspectmode='data'
-    ),
-    margin=dict(r=0, l=0, b=0, t=0)
-)
 
 
 
