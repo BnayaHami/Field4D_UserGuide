@@ -60,9 +60,6 @@ expander6 = st.expander('Card Reader/Writer (optional)')
 expander6.image(f'Hardware//card.png', width=200)
 expander6.write('Relevant for developers')
 
-expander10 = st.expander('Debugger (optional)')
-expander10.image(f'Hardware//debug.png', width=200)
-expander10.write('Relevant for developers')
 
 st.subheader('Provided equipment:')
 
@@ -75,6 +72,10 @@ expander8.image(f'Hardware//sp.png', width=200)
 expander9 = st.expander('MicroSD')
 expander9.image(f'Hardware//sd.png', width=200)
 expander9.write('Including the Raspberry Pi Operating system')
+
+expander10 = st.expander('Debugger (optional)')
+expander10.image(f'Hardware//debug.png', width=200)
+expander10.write('Relevant for developers')
 
 st.write('---')
 
@@ -103,10 +104,6 @@ with expander12:
         "AA",
     )
     to_do(
-        [(st.write, "**Card Reader/Writer (optional)**")],
-        "card",
-    )
-    to_do(
         [(st.write, "**LaunchPad CC2650**")],
         "gw",
     )
@@ -117,6 +114,14 @@ with expander12:
     to_do(
         [(st.write, "**MicroSD**")],
         "sd",
+    )
+    to_do(
+        [(st.write, "**Card Reader/Writer (optional)**")],
+        "card",
+    )
+    to_do(
+        [(st.write, "**Debugger (optional)**")],
+        "card",
     )
 
 st.write('---')
