@@ -14,6 +14,7 @@ st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered
 
 st.sidebar.markdown("# Contact us")
 st.sidebar.markdown('**IT Support Manager:** bnaya.hami@mail.huji.ac.il')
+st.sidebar.markdown('**Customer relations manager:** gal.naftal@mail.huji.ac.il')
 st.sidebar.markdown('**Systems Administrator:** nir.averbuch@mail.huji.ac.il')
 st.sidebar.markdown('**CEO:** menachem.moshelion@mail.huji.ac.il')
 
