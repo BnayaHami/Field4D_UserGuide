@@ -76,6 +76,7 @@ By following these steps, you’ll ensure a stable and accessible connection to 
 
 st.write('---')
 
+st.header('Activate the System')
 
 
 css = '''
@@ -142,7 +143,7 @@ with tab8:
         st.write("Pay attention that the computer you are working from should be using is on the same network as your Raspberry PI")
     # with st.expander("How to get your Pi's IP?"):
     #     st.write("""You should assign a static IP to your Raspberry Pi. If you are working within a university or any closed or monitored network, it is advisable to seek assistance from the IT department for this process.""")
-    # st.image(f'Connect//dashboard.png')
+    st.image(f'Connect//dashboard.png')
 
 
 with tab9:
