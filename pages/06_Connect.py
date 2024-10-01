@@ -43,30 +43,25 @@ This will allow you to access it reliably from your computer.
 **Note:** It's important that both your computer and the Raspberry Pi are connected to the same network.
 """)
 
-st.markdown('<p class="big-font">Within a Monitored Network (e.g., a University Network)</p>', unsafe_allow_html=True)
+with st.expander("Within a Monitored Network (e.g., a University Network)"):
+        st.markdown("""
+        If you're working in a closed or monitored environment, such as a university, it's advisable to consult your IT department for assistance.
+        They can help ensure network configuration and assign a static IP for the Pi.
+        """)
 
+with st.expander("Independent Setup with Ethernet"):
+        st.markdown("""
+        If you're working independently and have access to an Ethernet connection, connect both the Raspberry Pi and your computer to the
+        same router using network cables.
+        """)
 
-st.markdown("""
-If you're working in a closed or monitored environment, such as a university, it's advisable to consult your IT department for assistance.
-They can help ensure network configuration and assign a static IP for the Pi.
-""")
+with st.expander("Alternative Setup Using a SIM Router"):
+        st.markdown("""
+        If you don’t have a wired Ethernet connection, you can use a router that allows the insertion of a SIM card for wireless connectivity.
+        A basic data package (around **5GB per month**) should be sufficient for the experiment.
+        Ensure the router has two network cable ports to connect both the Raspberry Pi and your computer.
+        """)
 
-st.markdown('<p class="big-font">Independent Setup with Ethernet</p>', unsafe_allow_html=True)
-
-
-st.markdown("""
-If you're working independently and have access to an Ethernet connection, connect both the Raspberry Pi and your computer to the
-same router using network cables.
-""")
-
-st.markdown('<p class="big-font">Alternative Setup Using a SIM Router</p>', unsafe_allow_html=True)
-
-
-st.markdown("""
-If you don’t have a wired Ethernet connection, you can use a router that allows the insertion of a SIM card for wireless connectivity.
-A basic data package (around **5GB per month**) should be sufficient for the experiment.
-Ensure the router has two network cable ports to connect both the Raspberry Pi and your computer.
-""")
 
 st.markdown('<p class="big-font">Finding the Raspberry Pi IP Address</p>', unsafe_allow_html=True)
 
