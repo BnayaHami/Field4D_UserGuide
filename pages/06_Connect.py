@@ -28,6 +28,14 @@ st.title('Connect the system')
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-font">This section explain how to conncet all the parts in the system and start collecting data </p>', unsafe_allow_html=True)
 
+st.write("""
+To set up your experiment with a Raspberry Pi, you first need to access it by assigning a static IP address to the Raspberry Pi. Ensure that both your computer and the Raspberry Pi are connected to the same network. If you are working within a university or a monitored network, it's best to seek help from the IT department for this setup. If you are working independently and have access to an Ethernet connection, connect both the Raspberry Pi and your computer to the same router using network cables.
+
+Once both devices are connected, open the command line on your computer and type the command arp -a. This will display two IP addresses—one for your computer and one for the Raspberry Pi. Test both to determine which one is for the Pi.
+
+If you don’t have a wired connection, you can use a router with a SIM card slot to connect the devices. A basic data package of 5GB per month is sufficient. Make sure the router has two network cable ports to connect the Raspberry Pi and your computer. For the experiment to work properly, both devices need to be on the same network, so ensure this during setup.
+         """)
+
 st.write("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits/drives sensitive to static electricity. Therefore, before any operation, discharge any possible static voltage by touching something metallic to prevent short circuits or fires")
 
 
@@ -156,7 +164,7 @@ with tab15:
 with tab16:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
-    st.write("Soon, the STL file of this holder will be available for download")
+    st.write("STL files of this holder are available for download (below)")
     st.write("1. Place the sensor into its cover (black)")
     st.write("2. This is the orientation in which the sensor should go into the holder")
     st.write("3. Make sure the light sensor is placed under the hole and exposed to light")
