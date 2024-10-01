@@ -30,7 +30,9 @@ st.markdown('<p class="big-font">This section explain how to conncet all the par
 
 st.write("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits/drives sensitive to static electricity. Therefore, before any operation, discharge any possible static voltage by touching something metallic to prevent short circuits or fires")
 
-st.markdown('<p class="big-font">Static IP for your Raspberry Pi</p>', unsafe_allow_html=True)
+st.write('---')
+
+st.markdown('<p class="big-font"><b>Static IP for your Raspberry Pi<b></p>', unsafe_allow_html=True)
 
 
 st.markdown("""
@@ -41,25 +43,29 @@ This will allow you to access it reliably from your computer. These steps will h
 **Note:** It's important that both your computer and the Raspberry Pi are connected to the same network.
 """)
 
-st.subheader("1. Within a Monitored Network (e.g., a University Network)")
+st.markdown('<p class="big-font">1. Within a Monitored Network (e.g., a University Network)</p>', unsafe_allow_html=True)
+
 
 st.markdown("""
 If you're working in a closed or monitored environment, such as a university, it's advisable to consult your IT department for assistance. They can help ensure network configuration and assign a static IP for the Pi.
 """)
 
-st.subheader("2. Independent Setup with Ethernet")
+st.markdown('<p class="big-font">2. Independent Setup with Ethernet</p>', unsafe_allow_html=True)
+
 
 st.markdown("""
 If you're working independently and have access to an Ethernet connection, connect both the Raspberry Pi and your computer to the same router using network cables.
 """)
 
-st.subheader("3. Alternative Setup Using a SIM Router")
+st.markdown('<p class="big-font">3. Alternative Setup Using a SIM Router</p>', unsafe_allow_html=True)
+
 
 st.markdown("""
 If you don’t have a wired Ethernet connection, you can use a router that allows the insertion of a SIM card for wireless connectivity. A basic data package (around **5GB per month**) should be sufficient for the experiment. Ensure the router has two network cable ports to connect both the Raspberry Pi and your computer.
 """)
 
-st.subheader("Finding the Raspberry Pi's IP Address")
+st.markdown('<p class="big-font">Finding the Raspberry Pi IP Address</p>', unsafe_allow_html=True)
+
 
 st.markdown("""
 Once both your computer and the Raspberry Pi are connected to the same network, open the command line on your computer and type the command `arp -a`. This will list devices connected to the network, showing two IP addresses: one for your computer and one for the Raspberry Pi. Test both addresses to determine which one belongs to the Pi.
