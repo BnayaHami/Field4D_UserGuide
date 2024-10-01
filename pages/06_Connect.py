@@ -43,6 +43,9 @@ This will allow you to access it reliably from your computer.
 **Note:** It's important that both your computer and the Raspberry Pi are connected to the same network.
 """)
 
+
+st.markdown('<p class="big-font">What is your workframe?</p>', unsafe_allow_html=True)
+
 with st.expander("Within a Monitored Network (e.g., a University Network)"):
         st.markdown("""
         If you're working in a closed or monitored environment, such as a university, it's advisable to consult your IT department for assistance.
