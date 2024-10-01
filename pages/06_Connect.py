@@ -38,40 +38,50 @@ st.markdown('<p class="big-font"><b>Static IP for your Raspberry Pi<b></p>', uns
 st.markdown("""
 To set up your experiment with a Raspberry Pi, follow these steps to ensure network connectivity and access to the device.
 As part of the experiment setup, you need to assign a static IP address to your Raspberry Pi.
-This will allow you to access it reliably from your computer. These steps will help you understand how to assign a static IP address.
+This will allow you to access it reliably from your computer.
 
 **Note:** It's important that both your computer and the Raspberry Pi are connected to the same network.
 """)
 
-st.markdown('<p class="big-font">1. Within a Monitored Network (e.g., a University Network)</p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">Within a Monitored Network (e.g., a University Network)</p>', unsafe_allow_html=True)
 
 
 st.markdown("""
-If you're working in a closed or monitored environment, such as a university, it's advisable to consult your IT department for assistance. They can help ensure network configuration and assign a static IP for the Pi.
+If you're working in a closed or monitored environment, such as a university, it's advisable to consult your IT department for assistance.
+They can help ensure network configuration and assign a static IP for the Pi.
 """)
 
-st.markdown('<p class="big-font">2. Independent Setup with Ethernet</p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">Independent Setup with Ethernet</p>', unsafe_allow_html=True)
 
 
 st.markdown("""
-If you're working independently and have access to an Ethernet connection, connect both the Raspberry Pi and your computer to the same router using network cables.
+If you're working independently and have access to an Ethernet connection, connect both the Raspberry Pi and your computer to the
+same router using network cables.
 """)
 
-st.markdown('<p class="big-font">3. Alternative Setup Using a SIM Router</p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">Alternative Setup Using a SIM Router</p>', unsafe_allow_html=True)
 
 
 st.markdown("""
-If you don’t have a wired Ethernet connection, you can use a router that allows the insertion of a SIM card for wireless connectivity. A basic data package (around **5GB per month**) should be sufficient for the experiment. Ensure the router has two network cable ports to connect both the Raspberry Pi and your computer.
+If you don’t have a wired Ethernet connection, you can use a router that allows the insertion of a SIM card for wireless connectivity.
+A basic data package (around **5GB per month**) should be sufficient for the experiment.
+Ensure the router has two network cable ports to connect both the Raspberry Pi and your computer.
 """)
 
 st.markdown('<p class="big-font">Finding the Raspberry Pi IP Address</p>', unsafe_allow_html=True)
 
 
 st.markdown("""
-Once both your computer and the Raspberry Pi are connected to the same network, open the command line on your computer and type the command `arp -a`. This will list devices connected to the network, showing two IP addresses: one for your computer and one for the Raspberry Pi. Test both addresses to determine which one belongs to the Pi.
+Once both your computer and the Raspberry Pi are connected to the same network, open the command line on your computer and type the
+command `arp -a`. This will list devices connected to the network, showing two IP addresses: one for your computer and one for the Raspberry Pi.
+Test both addresses to determine which one belongs to the Pi.
 
 By following these steps, you’ll ensure a stable and accessible connection to your Raspberry Pi for your experiment.
 """)
+
+st.write('---')
+
+
 
 css = '''
 <style>
@@ -135,9 +145,9 @@ with tab8:
         st.write("The dashboard webapp would be your Raspberry PI's IP with the port 3000")
         st.write("For example: 127.0.0.1:3000")
         st.write("Pay attention that the computer you are working from should be using is on the same network as your Raspberry PI")
-    with st.expander("How to get your Pi's IP?"):
-        st.write("""You should assign a static IP to your Raspberry Pi. If you are working within a university or any closed or monitored network, it is advisable to seek assistance from the IT department for this process.""")
-    st.image(f'Connect//dashboard.png')
+    # with st.expander("How to get your Pi's IP?"):
+    #     st.write("""You should assign a static IP to your Raspberry Pi. If you are working within a university or any closed or monitored network, it is advisable to seek assistance from the IT department for this process.""")
+    # st.image(f'Connect//dashboard.png')
 
 
 with tab9:
