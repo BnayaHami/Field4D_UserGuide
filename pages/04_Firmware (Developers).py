@@ -53,7 +53,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11 = st.tabs([' 
 
 with tab1:
     st.write('**Open the Raspberry Pi Imager**')
-    st.write("**Note:** If you have something written on your card, you might would need to reset it before writing the IMG")
+    st.info("**Note:** If you have something written on your card, you might would need to reset it before writing the IMG")
     st.image(f'Firmware/firm1.png')
 
 with tab2:
@@ -78,7 +78,7 @@ with tab6:
 
 with tab7:
     st.write('**Choose the IMG**')
-    st.write('**Note:** The relevant IMG is detailed in the email sent to you and might have a different name')
+    st.info('**Note:** The relevant IMG is detailed in the email sent to you and might have a different name')
     st.image(f'Firmware/firm6.png')
 
 with tab8:
@@ -107,7 +107,7 @@ st.write('Link: https://www.ti.com/tool/UNIFLASH')
 st.write('If you are struggling with downloading, check the FAQ for more information')
 st.page_link("pages/07_FAQ.py", label="Press here to go to FAQ")
 
-st.write('**Note:** You should get the LaunchPad and SensorTag firmwares from your provider')
+st.info('**Note:** You should get the LaunchPad and SensorTag firmwares from your provider')
 
 st.warning("**IMPORTANT:** Make sure that the LaunchPad and the Debugger aren't connected to the computer simultaneously")
 
@@ -184,7 +184,7 @@ with tab21:
 
 with tab22:
      st.write('**Connect the debugger**')
-     st.write("**Note**: The debugger doesn't come with a cable, but it uses a standard micro USB cable. You can use the one that comes with the LaunchPad or any other micro USB cable you have.")
+     st.info("**Note**: The debugger doesn't come with a cable, but it uses a standard micro USB cable. You can use the one that comes with the LaunchPad or any other micro USB cable you have.")
      st.image(f'Firmware//debugger1.png')
 
 with tab23:
@@ -228,7 +228,7 @@ with tab30:
 
 with tab31:
      st.write('**Make sure the program loaded successfully**')
-     st.write("**Note:** From this point, you don't have to start the whole proccess again, you can simply connect another sensor to the debugger and press 'Load Image'")
+     st.info("**Note:** From this point, you don't have to start the whole proccess again, you can simply connect another sensor to the debugger and press 'Load Image'")
      st.image(f'Firmware/sp9.png')
 
 with tab32:
@@ -243,7 +243,7 @@ with tab33:
 
 
 st.write('---')
-st.markdown('**Note:** Check out the Software section for additional information if needed')
+st.info('**Note:** Check out the Software section for additional information if needed')
 st.page_link("pages/06_Connect.py", label="Continue to Connect")
 
      
