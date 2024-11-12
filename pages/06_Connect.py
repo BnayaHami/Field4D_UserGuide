@@ -26,14 +26,23 @@ st.sidebar.markdown('**CEO:** menachem.moshelion@mail.huji.ac.il')
 st.title('Connect the system')
 
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
-# st.markdown('<p class="big-font">This section explain how to conncet all the parts in the system and start collecting data </p>', unsafe_allow_html=True)
-st.info('This section explain how to conncet all the parts in the system and start collecting data')
+st.markdown('<p class="big-font">This section explain how to conncet all the parts in the system and start collecting data </p>', unsafe_allow_html=True)
+# st.info('This section explain how to conncet all the parts in the system and start collecting data')
 
 st.markdown("""There are three stages to connect the system:
 1. Assign static IP for your Raspberry Pi
 2. Activate the system and define the sensors
 3. Setup the sensors in the measurement area
 """)
+
+st.markdown("""
+There are three stages to connect the system:
+<ol>
+    <li style="font-size:20px;">Assign static IP for your Raspberry Pi</li>
+    <li style="font-size:20px;">Activate the system and define the sensors</li>
+    <li style="font-size:20px;">Setup the sensors in the measurement area</li>
+</ol>
+""", unsafe_allow_html=True)
 
 st.warning("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits/drives sensitive to static electricity. Therefore, before any operation, discharge any possible static voltage by touching something metallic to prevent short circuits or fires")
 
