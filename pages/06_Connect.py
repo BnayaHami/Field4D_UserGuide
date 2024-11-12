@@ -28,11 +28,16 @@ st.title('Connect the system')
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-font">This section explain how to conncet all the parts in the system and start collecting data </p>', unsafe_allow_html=True)
 
-st.write("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits/drives sensitive to static electricity. Therefore, before any operation, discharge any possible static voltage by touching something metallic to prevent short circuits or fires")
+st.write("""There are three stages to connect the system:
+         1. Assign static IP for your Raspberry Pi
+         2. Activate the system and define the sensors
+         3. Setup the sensors in the measurement area""")
+
+st.warning("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits/drives sensitive to static electricity. Therefore, before any operation, discharge any possible static voltage by touching something metallic to prevent short circuits or fires")
 
 st.write('---')
 
-st.markdown('<p class="big-font"><b>Static IP for your Raspberry Pi<b></p>', unsafe_allow_html=True)
+st.header('1. Static IP for your Raspberry Pi')
 
 
 st.markdown("""
@@ -79,7 +84,7 @@ By following these steps, you’ll ensure a stable and accessible connection to 
 
 st.write('---')
 
-st.header('Activate the System')
+st.header('2. Activate the System')
 
 
 css = '''
@@ -186,7 +191,7 @@ with tab10:
 
 st.write('---')
 
-st.header('Setup')
+st.header('3. Setup')
 
 st.write("**Note**: this is our suggestion for placing the sensors in a greenhouse:")
 st.write("Two sensors are assigned for each plant, one of them is in the height of the canopy (gradually raised up during the plant's growth), and the second one at a high place above the plant")
