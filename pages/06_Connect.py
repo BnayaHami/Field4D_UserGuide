@@ -29,18 +29,12 @@ st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_al
 st.markdown('<p class="big-font">This section explain how to conncet all the parts in the system and start collecting data </p>', unsafe_allow_html=True)
 # st.info('This section explain how to conncet all the parts in the system and start collecting data')
 
-st.markdown("""There are three stages to connect the system:
-1. Assign static IP for your Raspberry Pi
-2. Activate the system and define the sensors
-3. Setup the sensors in the measurement area
-""")
-
 st.markdown("""
 There are three stages to connect the system:
 <ol>
-    <li style="font-size:20px;">Assign static IP for your Raspberry Pi</li>
-    <li style="font-size:20px;">Activate the system and define the sensors</li>
-    <li style="font-size:20px;">Setup the sensors in the measurement area</li>
+    <li style="font-size:18px;">Assign static IP for your Raspberry Pi</li>
+    <li style="font-size:18px;">Activate the system and define the sensors</li>
+    <li style="font-size:18px;">Setup the sensors in the measurement area</li>
 </ol>
 """, unsafe_allow_html=True)
 
@@ -56,8 +50,10 @@ To set up your experiment with a Raspberry Pi, follow these steps to ensure netw
 As part of the experiment setup, you need to assign a static IP address to your Raspberry Pi.
 This will allow you to access it reliably from your computer.
 
-**Note:** It's important that both your computer and the Raspberry Pi are connected to the same network.
 """)
+
+st.info("**Note:** It's important that both your computer and the Raspberry Pi are connected to the same network")
+
 
 
 st.markdown('<p class="big-font">What is your workframe?</p>', unsafe_allow_html=True)
@@ -146,8 +142,8 @@ with tab7:
     st.markdown('<p class="big-fonts"><b>Press the right bottom to send a ping<b></p>', unsafe_allow_html=True)
     with st.expander("How this works?"):
         st.write("The SensorTag is a wireless device, and the ping button is used to send a signal to the Raspberry Pi. This signal is used to identify the sensor and connect it to the system. Pressing the ping button will allow the sensor to appear on the dashboard app (on the next slide). On the dashboard app, you will be able to assign the sensor a Name/Location/Label etc.")
-    st.markdown('**Note:** It usually takes about 1-2 minutes for the sensor to be recognized by the system and be able to send a ping. we recommend to insert the batteries to all of the sensors and then start sending pings') 
-    st.markdown('**IMPORTANT:** There are two buttons, one on each side of the sensor. Ensure you press the correct button, which is located on the right side of the sensor when it is facing up. The other button resets the sensor and will cause a delay of a few minutes before the sensor is recognized by the system again') 
+    st.info('**Note:** It usually takes about 1-2 minutes for the sensor to be recognized by the system and be able to send a ping. we recommend to insert the batteries to all of the sensors and then start sending pings') 
+    st.warning('**IMPORTANT:** There are two buttons, one on each side of the sensor. Ensure you press the correct button, which is located on the right side of the sensor when it is facing up. The other button resets the sensor and will cause a delay of a few minutes before the sensor is recognized by the system again') 
     st.image(f'Connect//ping.png')
 
 with tab8:
