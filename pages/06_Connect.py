@@ -26,10 +26,10 @@ st.sidebar.markdown('**CEO:** menachem.moshelion@mail.huji.ac.il')
 st.title('Connect the system')
 
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
-st.markdown('<p class="big-font">This section explain how to conncet all the parts in the system and start collecting data </p>', unsafe_allow_html=True)
+# st.markdown('<p class="big-font">This section explain how to conncet all the parts in the system and start collecting data </p>', unsafe_allow_html=True)
 st.info('This section explain how to conncet all the parts in the system and start collecting data')
 
-st.write("""There are three stages to connect the system:
+st.mardown("""There are three stages to connect the system:
          1. Assign static IP for your Raspberry Pi
          2. Activate the system and define the sensors
          3. Setup the sensors in the measurement area""")
