@@ -25,7 +25,7 @@ st.markdown('<p class="big-fontl">✱ <b>for developers<b> </p>', unsafe_allow_h
 st.markdown("<style> .big-fontt {font-size:18px !important;} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-fontt">This section explain how to manage the OS system of the RaspberryPi and the firmwares of the LaunchPad and the sensors</p>', unsafe_allow_html=True)
 
-st.write("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits/drives sensitive to static electricity. Therefore, before any operation, discharge any possible static voltage by touching something metallic to prevent short circuits or fires")
+st.warning("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits/drives sensitive to static electricity. Therefore, before any operation, discharge any possible static voltage by touching something metallic to prevent short circuits or fires")
 
 st.write('---')
 
@@ -109,7 +109,7 @@ st.page_link("pages/07_FAQ.py", label="Press here to go to FAQ")
 
 st.write('**Note:** You should get the LaunchPad and SensorTag firmwares from your provider')
 
-st.write("**IMPORTANT:** Make sure that the LaunchPad and the Debugger aren't connected to the computer simultaneously")
+st.warning("**IMPORTANT:** Make sure that the LaunchPad and the Debugger aren't connected to the computer simultaneously")
 
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-font">Flash LaunchPad firmware </p>', unsafe_allow_html=True)
@@ -149,7 +149,7 @@ with tab16:
      st.image(f'Firmware/gw4.png')  
 
 with tab17:
-     st.markdown('<p class="big-fontt"><b>IMPORTANT: Choose the "gw" file. Ensure that you select the "gw" file associated with the LaunchPad, not the "sp" file, which belongs to the SensorTag</b></p>', unsafe_allow_html=True)
+     st.warning('**IMPORTANT:** Choose the "gw" file. Ensure that you select the "gw" file associated with the LaunchPad, not the "sp" file, which belongs to the SensorTag')
      st.image(f'Firmware/gw5.png')   
 
 with tab18:
@@ -219,7 +219,7 @@ with tab28:
      st.image(f'Firmware/sp6.png')
 
 with tab29:
-     st.markdown('<p class="big-fontt"><b>IMPORTANT: Choose the "sp" file. Ensure that you select the "sp" file associated with the SensorTag, not the "gw" file, which belongs to the LaunchPad</b></p>', unsafe_allow_html=True)
+     st.warning('**IMPORTANT:** Choose the "sp" file. Ensure that you select the "sp" file associated with the SensorTag, not the "gw" file, which belongs to the LaunchPad')
      st.image(f'Firmware/sp7.png')
 
 with tab30:
