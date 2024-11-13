@@ -26,23 +26,23 @@ st.sidebar.markdown('**CEO:** menachem.moshelion@mail.huji.ac.il')
 st.title('Connect the system')
 
 st.markdown("<style> .big-font {font-size:22px !important;} </style>", unsafe_allow_html=True)
-st.markdown('<p class="big-font">This section explain how to conncet all the parts in the system and start collecting data </p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">This section explains how to connect all components of the system and initiate data collection</p>', unsafe_allow_html=True)
 # st.info('This section explain how to conncet all the parts in the system and start collecting data')
 
 st.markdown("""
-There are three stages to connect the system:
+To set up the system, follow these three stages:
 <ol>
-    <li style="font-size:18px;">Assign static IP for your Raspberry Pi</li>
-    <li style="font-size:18px;">Activate the system and define the sensors</li>
-    <li style="font-size:18px;">Setup the sensors in the measurement area</li>
+    <li style="font-size:18px;">Assign a Static IP to the Raspberry Pi</li>
+    <li style="font-size:18px;">Activate the System and Configure Sensors</li>
+    <li style="font-size:18px;">Position Sensors in the Measurement Area</li>
 </ol>
 """, unsafe_allow_html=True)
 
-st.warning("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits/drives sensitive to static electricity. Therefore, before any operation, discharge any possible static voltage by touching something metallic to prevent short circuits or fires")
+st.warning("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits sensitive to static electricity. Before handling, discharge any static voltage by touching a metallic object to prevent short circuits or potential fire hazards")
 
 st.write('---')
 
-st.header('1. Static IP for your Raspberry Pi')
+st.header('1. Assign a Static IP to the Raspberry Pi')
 
 
 st.markdown("""
@@ -91,7 +91,7 @@ By following these steps, you’ll ensure a stable and accessible connection to 
 
 st.write('---')
 
-st.header('2. Activate the System')
+st.header('2. Activate the System and Configure Sensors')
 
 
 css = '''
@@ -109,7 +109,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10= st.tabs(['1', '2', 
 with tab1:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Insert the microSD card into its slot in the Raspberry Pi<b></p>', unsafe_allow_html=True)
-    st.write('The Raspberry Pi constitutes the core of the system and is responsible for collecting data from the sensors and sending it to the dashboard webapp. The microSD card contains the operating system and the software required for the system to function.')
+    st.write('The Raspberry Pi serves as the core of the system, responsible for collecting data from the sensors and transmitting it to the dashboard web app. The microSD card holds the operating system and necessary software for the system to function')
     st.image(f'Connect//sd_c.png')
 
 with tab2:
@@ -141,9 +141,9 @@ with tab7:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Press the right bottom to send a ping<b></p>', unsafe_allow_html=True)
     with st.expander("How this works?"):
-        st.write("The SensorTag is a wireless device, and the ping button is used to send a signal to the Raspberry Pi. This signal is used to identify the sensor and connect it to the system. Pressing the ping button will allow the sensor to appear on the dashboard app (on the next slide). On the dashboard app, you will be able to assign the sensor a Name/Location/Label etc.")
-    st.info('**Note:** It usually takes about 1-2 minutes for the sensor to be recognized by the system and be able to send a ping. we recommend to insert the batteries to all of the sensors and then start sending pings') 
-    st.warning('**IMPORTANT:** There are two buttons, one on each side of the sensor. Ensure you press the correct button, which is located on the right side of the sensor when it is facing up. The other button resets the sensor and will cause a delay of a few minutes before the sensor is recognized by the system again') 
+        st.write("The SensorTag is a wireless device, and the ping button is used to send a signal to the Raspberry Pi. This signal helps identify the sensor and connect it to the system. Pressing the ping button enables the sensor to appear in the dashboard app, where you can assign it a name, location, label, and other identifiers.")
+    st.info('It usually takes about 1-2 minutes for the sensor to be recognized by the system and able to send a ping. We recommend inserting the batteries into all sensors before starting to send pings') 
+    st.warning('**IMPORTANT:** There are two buttons, one on each side of the sensor. Ensure you press the correct button, located on the right side when the sensor is facing up. The other button resets the sensor, causing a delay of a few minutes before the system recognizes it again') 
     st.image(f'Connect//ping.png')
 
 with tab8:
@@ -181,7 +181,7 @@ with tab9:
         st.image(f'Connect//dashboard_7.png')
     with tab78:
         st.image(f'Connect//dashboard_8.png')
-        st.write('When you add a Label/Experiment Info, you will be able to select it for each sensor. This action will update the list of available options from which you can choose')
+        st.write('When you add a label or experiment info, it becomes available for selection with each sensor. This action updates the list of available options for you to choose from')
     with tab79:
         st.image(f'Connect//dashboard_9.png')
     with tab80:
@@ -191,10 +191,25 @@ with tab9:
     with tab82:
         st.image(f'Connect//dashboard_12.png')
 
+# Define custom CSS styles for the text
+st.markdown("""
+    <style>
+        .big-fonts {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4A4A4A; /* A soft dark gray */
+            background-color: #F0F0F5; /* Light gray background */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
 with tab10:
-    st.markdown('<p class="big-fonts">Begin defining your sensors and experiment information as outlined in the tutorial</p>', unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts">You are ready to begin your experiment! Once you start, ensure that you position your sensors according to their allocated locations and begin data collection</p>', unsafe_allow_html=True) 
-    st.markdown('<p class="big-fonts">Check out the section below for our recommendations on positioning the sensors to achieve the most accurate measurements</p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-fonts">📌 Begin defining your sensors and experiment information as outlined in the tutorial.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-fonts">🚀 You are ready to begin your experiment! Once you start, ensure that you position your sensors according to their allocated locations and begin data collection.</p>', unsafe_allow_html=True) 
+    st.markdown('<p class="big-fonts">📈 Check out the section below for our recommendations on positioning the sensors to achieve the most accurate measurements.</p>', unsafe_allow_html=True)
 
 st.write('---')
 
