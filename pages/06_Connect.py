@@ -194,7 +194,7 @@ with tab9:
 # Define custom CSS styles for the text
 st.markdown("""
     <style>
-        .big-fonts {
+        .big-fontsss {
             font-size: 18px;
             font-weight: bold;
             color: #4A4A4A; /* A soft dark gray */
@@ -207,9 +207,9 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 with tab10:
-    st.markdown('<p class="big-fonts">📌 Begin defining your sensors and experiment information as outlined in the tutorial.</p>', unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts">🚀 You are ready to begin your experiment! Once you start, ensure that you position your sensors according to their allocated locations and begin data collection.</p>', unsafe_allow_html=True) 
-    st.markdown('<p class="big-fonts">📈 Check out the section below for our recommendations on positioning the sensors to achieve the most accurate measurements.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-fontsss">Begin defining your sensors and experiment information as outlined in the tutorial.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-fontsss">You are ready to begin your experiment! Once you start, ensure that you position your sensors according to their allocated locations and begin data collection.</p>', unsafe_allow_html=True) 
+    st.markdown('<p class="big-fontsss">Check out the section below for our recommendations on positioning the sensors to achieve the most accurate measurements.</p>', unsafe_allow_html=True)
 
 st.write('---')
 
