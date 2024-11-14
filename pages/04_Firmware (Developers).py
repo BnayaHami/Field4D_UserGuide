@@ -54,7 +54,7 @@ button[data-baseweb="tab"] {
 
 st.write(font_css, unsafe_allow_html=True)
 
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11 = st.tabs([' 1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab34, tab35, tab36, tab37, tab38, tab39, tab40, tab41 = st.tabs([' 1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19'])
 
 with tab1:
     st.write('**Open the Raspberry Pi Imager**')
@@ -66,15 +66,15 @@ with tab2:
      st.image(f'Firmware/IMG.png')
 
 with tab3:
-    st.write('**Click on “CHOOSE STORAGE”**')
+    st.write('**Click on “Choose device**')
     st.image(f'Firmware/firm2.png')
 
 with tab4:
-    st.write('**Choose the microSD card**')
+    st.write('**Choose Raspberry pi 5**')
     st.image(f'Firmware/firm3.png')
 
 with tab5:
-    st.write('**Click on “CHOOSE OS”**')
+    st.write('**Click on “Choose OS”**')
     st.image(f'Firmware/firm4.png')
 
 with tab6:
@@ -87,19 +87,53 @@ with tab7:
     st.image(f'Firmware/firm6.png')
 
 with tab8:
-    st.write('**Click on “write”**')
+    st.write('**Click on “Chosse storage”**')
     st.image(f'Firmware/firm7.png') 
 
 with tab9:
-    st.write('**Click on “yes”**')
+    st.write('**Click on the available SD card**')
     st.image(f'Firmware/firm8.png') 
 
 with tab10:
-    st.write('**Click on “continue”**')
+    st.write('**Click on “Next”**')
     st.image(f'Firmware/firm9.png')  
 
 with tab11:
-    st.subheader("Your'e all set!")
+    st.write('**Click on “Edit settings”**')
+    st.image(f'Firmware/firm10.png')
+
+with tab34:
+    st.write('**Fill in the hostname and password. make sure the Username is "pi"**')
+    st.image(f'Firmware/firm11.png')   
+
+with tab35:
+    st.write('**Proceed to "Services", and make sure the SSH is enabled, and the option is set to "Use password authentication**')
+    st.image(f'Firmware/firm12.png')
+
+with tab36:
+    st.write('**Proceed to "Options", making sure to check these rubrics, and press "Save"**')
+    st.image(f'Firmware/firm13.png')
+
+with tab37:
+    st.write('**Click on “yes”**')
+    st.image(f'Firmware/firm14.png')
+
+with tab38:
+    st.write('**Click on “yes”**')
+    st.image(f'Firmware/firm15.png')
+
+with tab39:
+    st.write('**Wait for the installation to complete**')
+    st.image(f'Firmware/firm16.png')
+
+with tab40:
+    st.write('**Click on “Continue”**')
+    st.image(f'Firmware/firm17.png')
+
+with tab41:
+    st.write('**You are all set!**')
+
+st.write('---')
 
 # Install the launchpad and the sensortag hardwares
 
