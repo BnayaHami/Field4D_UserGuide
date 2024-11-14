@@ -13,7 +13,9 @@ st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered
 
 # "https://github.com/BnayaHami/Field4D_UserGuide/blob/ce1bb212d874cc3445469374fe588b2a77524ae5/f4d.png"
 
-st.logo("https://github.com/BnayaHami/Field4D_UserGuide/blob/ce1bb212d874cc3445469374fe588b2a77524ae5/f4d.png")
+st.logo("https://github.com/BnayaHami/Field4D_UserGuide/blob/ce1bb212d874cc3445469374fe588b2a77524ae5/f4d.png",
+          link="https://github.com/BnayaHami/Field4D_UserGuide/blob/ce1bb212d874cc3445469374fe588b2a77524ae5/f4d.png",
+          icon_image='"https://github.com/BnayaHami/Field4D_UserGuide/blob/ce1bb212d874cc3445469374fe588b2a77524ae5/f4d.png"')
 
 
 st.sidebar.markdown("# Contact us")
