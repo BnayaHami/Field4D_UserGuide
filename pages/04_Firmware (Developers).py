@@ -1,6 +1,5 @@
 # libraries
 import streamlit as st
-from streamlit_extras.app_logo import add_logo
 import pandas as pd
 import numpy as np
 from PIL import Image
@@ -12,7 +11,9 @@ import base64
 # setting page conf
 st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered", initial_sidebar_state = 'expanded')
 
-add_logo("https://github.com/BnayaHami/Field4D_UserGuide/blob/ce1bb212d874cc3445469374fe588b2a77524ae5/f4d.png")
+# "https://github.com/BnayaHami/Field4D_UserGuide/blob/ce1bb212d874cc3445469374fe588b2a77524ae5/f4d.png"
+
+st.logo("https://github.com/BnayaHami/Field4D_UserGuide/blob/ce1bb212d874cc3445469374fe588b2a77524ae5/f4d.png")
 
 
 st.sidebar.markdown("# Contact us")
