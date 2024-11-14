@@ -11,11 +11,10 @@ import base64
 # setting page conf
 st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered", initial_sidebar_state = 'expanded')
 
-st.logo(
-    LOGO_URL_LARGE,
-    link="https://streamlit.io/gallery",
-    icon_image=LOGO_URL_SMALL,
-)
+logo_url = "https://github.com/BnayaHami/Field4D_UserGuide/blob/main/f4d.png"
+
+# Display the logo
+st.image(logo_url, use_column_width=True)
 
 
 st.sidebar.markdown("# Contact us")
