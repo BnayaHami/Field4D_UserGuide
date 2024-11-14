@@ -13,8 +13,6 @@ st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered
 
 logo_url = "https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/f4d.png"
 
-st.image(logo_url, width=100)
-
 st.logo(logo_url)
 
 

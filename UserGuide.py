@@ -15,6 +15,10 @@ import base64
 # setting page conf
 st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered", initial_sidebar_state = 'expanded')
 
+logo_url = "https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/f4d.png"
+
+st.logo(logo_url)
+
 st.sidebar.markdown("# Contact us")
 st.sidebar.markdown('**IT Support Manager:** bnaya.hami@mail.huji.ac.il')
 st.sidebar.markdown('**Customer relations manager:** gal.naftal@mail.huji.ac.il')
