@@ -11,7 +11,7 @@ import base64
 # setting page conf
 st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered", initial_sidebar_state = 'expanded')
 
-logo_url = "https://raw.github.com/BnayaHami/Field4D_UserGuide/blob/ce1bb212d874cc3445469374fe588b2a77524ae5/f4d.png"
+logo_url = "https://github.com/BnayaHami/Field4D_UserGuide/blob/main/f4d.png"
 
 st.image(logo_url, width = 100)
 
