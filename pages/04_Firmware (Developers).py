@@ -66,7 +66,7 @@ with tab2:
      st.image(f'Firmware/IMG.png')
 
 with tab3:
-    st.write('**Click on “Choose device**')
+    st.write('**Click on “Choose device”**')
     st.image(f'Firmware/firm2.png')
 
 with tab4:
@@ -131,7 +131,7 @@ with tab40:
     st.image(f'Firmware/firm17.png')
 
 with tab41:
-    st.write('**You are all set!**')
+     st.subheader("Your'e all set!")           
 
 st.write('---')
 
