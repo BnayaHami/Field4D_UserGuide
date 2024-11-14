@@ -207,13 +207,13 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 with tab10:
-    st.markdown('<p class="big-fontsss">Begin defining your sensors and experiment information as outlined in the tutorial.</p>', unsafe_allow_html=True)
-    st.markdown('<p class="big-fontsss">You are ready to begin your experiment! Once you start, ensure that you position your sensors according to their allocated locations and begin data collection.</p>', unsafe_allow_html=True) 
-    st.markdown('<p class="big-fontsss">Check out the section below for our recommendations on positioning the sensors to achieve the most accurate measurements.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-fontsss">1. Begin defining your sensors and experiment information as outlined in the tutorial</p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-fontsss">2. You are ready to begin your experiment! Once you start, ensure that you position your sensors according to their allocated locations and begin data collection</p>', unsafe_allow_html=True) 
+    st.markdown('<p class="big-fontsss">3. Move on to the section below for instructions on positioning the sensors</p>', unsafe_allow_html=True)
 
 st.write('---')
 
-st.header('3. Setup')
+st.header('3. Position Sensors in the Measurement Area')
 
 st.write("**Note**: this is our suggestion for placing the sensors in a greenhouse:")
 st.write("Two sensors are assigned for each plant, one of them is in the height of the canopy (gradually raised up during the plant's growth), and the second one at a high place above the plant")

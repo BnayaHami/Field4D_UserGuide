@@ -11,6 +11,13 @@ import base64
 # setting page conf
 st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered", initial_sidebar_state = 'expanded')
 
+st.logo(
+    LOGO_URL_LARGE,
+    link="https://streamlit.io/gallery",
+    icon_image=LOGO_URL_SMALL,
+)
+
+
 st.sidebar.markdown("# Contact us")
 st.sidebar.markdown('**IT Support Manager:** bnaya.hami@mail.huji.ac.il')
 st.sidebar.markdown('**Customer relations manager:** gal.naftal@mail.huji.ac.il')
