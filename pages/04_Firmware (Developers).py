@@ -14,7 +14,7 @@ st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered
 logo_url = "https://github.com/BnayaHami/Field4D_UserGuide/blob/ce1bb212d874cc3445469374fe588b2a77524ae5/f4d.png"
 
 # Display the logo
-st.image(logo_url, use_column_width=True)
+st.logo(logo_url, use_column_width=True)
 
 
 st.sidebar.markdown("# Contact us")
