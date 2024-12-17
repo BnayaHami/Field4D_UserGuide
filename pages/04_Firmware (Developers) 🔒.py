@@ -8,6 +8,26 @@ from PIL import ImageFont
 import os
 import base64
 
+PASSWORD = st.secrets["FIRMWARE_PASSWORD"]  # For Firmware page
+
+# Initialize session state for password
+if "authenticated_firmware" not in st.session_state:
+    st.session_state.authenticated_firmware = False
+
+# Password protection logic
+if not st.session_state.authenticated_firmware:
+    st.title("Restricted Access")
+    st.text("This page is limited to developers only. Access is restricted.")
+    password_input = st.text_input("Enter the password to access this page:", type="password")
+    if st.button("Submit"):
+        if password_input == PASSWORD:
+            st.session_state.authenticated_firmware = True
+            st.success("Access Granted!")
+            st.rerun()  # Use st.rerun instead of experimental_rerun
+        else:
+            st.error("Incorrect password. Please try again.")
+    st.stop()
+
 # setting page conf
 st.set_page_config(page_title="User Guide", page_icon = "🔧", layout="centered", initial_sidebar_state = 'expanded')
 
