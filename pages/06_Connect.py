@@ -258,7 +258,7 @@ with tab9:
         )
     ]
 
-    carousel(items=test_items, interval=99999, container_height=320, width=1.0)
+    carousel(items=test_items, interval=99999, container_height=400, width=1.0)
 
 # Define custom CSS styles for the text
 st.markdown("""
