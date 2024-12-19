@@ -170,7 +170,7 @@ with tab8:
 with tab9:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Tutorial for the dashboard website<b></p>', unsafe_allow_html=True)
-    st.info('Due to a temporary compatibility issue, the pictures are a bit blurry, we recommend zooming in for a more comfortable viewing experience ')
+    st.info('Note: Due to a temporary compatibility issue, the pictures are a bit blurry, we recommend zooming in for a more comfortable viewing experience ')
     # tab71, tab72, tab73, tab74, tab75, tab76, tab77, tab78, tab79, tab80, tab81, tab82 = st.tabs(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'])
     # with tab71:
     #     st.image(f'Connect//dashboard_1.png')
