@@ -7,6 +7,7 @@ from PIL import ImageDraw
 from PIL import ImageFont
 import os
 import base64
+from streamlit_carousel import carousel
 
 from stl import mesh
 from mpl_toolkits import mplot3d
@@ -168,32 +169,96 @@ with tab8:
 with tab9:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Tutorial for the dashboard website<b></p>', unsafe_allow_html=True) 
-    tab71, tab72, tab73, tab74, tab75, tab76, tab77, tab78, tab79, tab80, tab81, tab82 = st.tabs(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'])
-    with tab71:
-        st.image(f'Connect//dashboard_1.png')
-    with tab72:
-        st.image(f'Connect//dashboard_2.png')
-    with tab73:
-        st.image(f'Connect//dashboard_3.png')
-    with tab74:
-        st.image(f'Connect//dashboard_4.png')
-    with tab75:
-        st.image(f'Connect//dashboard_5.png')
-    with tab76:
-        st.image(f'Connect//dashboard_6.png')
-    with tab77:
-        st.image(f'Connect//dashboard_7.png')
-    with tab78:
-        st.image(f'Connect//dashboard_8.png')
-        st.write('When you add a label or experiment info, it becomes available for selection with each sensor. This action updates the list of available options for you to choose from')
-    with tab79:
-        st.image(f'Connect//dashboard_9.png')
-    with tab80:
-        st.image(f'Connect//dashboard_10.png')
-    with tab81:
-        st.image(f'Connect//dashboard_11.png')
-    with tab82:
-        st.image(f'Connect//dashboard_12.png')
+    # tab71, tab72, tab73, tab74, tab75, tab76, tab77, tab78, tab79, tab80, tab81, tab82 = st.tabs(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'])
+    # with tab71:
+    #     st.image(f'Connect//dashboard_1.png')
+    # with tab72:
+    #     st.image(f'Connect//dashboard_2.png')
+    # with tab73:
+    #     st.image(f'Connect//dashboard_3.png')
+    # with tab74:
+    #     st.image(f'Connect//dashboard_4.png')
+    # with tab75:
+    #     st.image(f'Connect//dashboard_5.png')
+    # with tab76:
+    #     st.image(f'Connect//dashboard_6.png')
+    # with tab77:
+    #     st.image(f'Connect//dashboard_7.png')
+    # with tab78:
+    #     st.image(f'Connect//dashboard_8.png')
+    #     st.write('When you add a label or experiment info, it becomes available for selection with each sensor. This action updates the list of available options for you to choose from')
+    # with tab79:
+    #     st.image(f'Connect//dashboard_9.png')
+    # with tab80:
+    #     st.image(f'Connect//dashboard_10.png')
+    # with tab81:
+    #     st.image(f'Connect//dashboard_11.png')
+    # with tab82:
+    #     st.image(f'Connect//dashboard_12.png')
+    test_items = [
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_1.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_2.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_3.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_4.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_5.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_6.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_7.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_8.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_9.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_10.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_11.png"
+        ),
+        dict(
+            title='',
+            text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_12.png"
+        )
+    ]
+
+    carousel(items=test_items, interval=99999, container_height=320, width=1.0)
 
 # Define custom CSS styles for the text
 st.markdown("""

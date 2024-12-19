@@ -4,3 +4,5 @@ streamlit==1.40.0
 matplotlib==3.5.1
 plotly==5.17.0
 streamlit-extras
+pyarrow
+streamlit-carousel
