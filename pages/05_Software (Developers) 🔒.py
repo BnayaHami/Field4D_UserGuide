@@ -18,7 +18,8 @@ if "authenticated_software" not in st.session_state:
 # Password protection logic
 if not st.session_state.authenticated_software:
     st.title("Restricted Access")
-    st.text("This page is limited to developers only. Access is restricted.")
+    st.warning("This page is limited to developers only. Access is restricted.")
+    st.markdown("This section is not necessary for the installation, and refers to some guides and commands for developers.")
     password_input = st.text_input("Enter the password to access this page:", type="password")
     if st.button("Submit"):
         if password_input == PASSWORD:
