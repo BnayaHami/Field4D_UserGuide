@@ -38,7 +38,7 @@ div[data-testid="stExpander"] details summary p{
 </style>
 """ ,unsafe_allow_html=True,)
 
-st.subheader('Self-purchase:')
+st.subheader('Provided equipment:')
 
 expander1 = st.expander('RaspberryPi')
 expander1.image(f'Hardware/pi.png', width=200)
@@ -51,22 +51,6 @@ expander2 = st.expander('RaspberryPi power supply')
 expander2.image(f'Hardware//power.png', width=200)
 expander2.write('Suggestion for online purchase:')
 expander2.write('https://piitel.co.il/shop/27w-usb-c-psu/')
-
-expander3 = st.expander('Micro-USB cable')
-expander3.image(f'Hardware//cable.png', width=200)
-
-expander4 = st.expander('Network cable')
-expander4.image(f'Hardware//n-cable.png', width=200)
-
-expander5 = st.expander('AA batteries')
-expander5.image(f'Hardware//battery.png', width=150)
-
-expander6 = st.expander('Card Reader/Writer (optional)')
-expander6.image(f'Hardware//card.png', width=200)
-expander6.write('Relevant for developers')
-
-
-st.subheader('Provided equipment:')
 
 expander7 = st.expander('LaunchPad CC2650')
 expander7.image(f'Hardware//gw.png', width=200)
@@ -81,6 +65,21 @@ expander9.write('Including the Raspberry Pi Operating system')
 expander10 = st.expander('Debugger (optional)')
 expander10.image(f'Hardware//debug.png', width=200)
 expander10.write('Relevant for developers')
+
+expander6 = st.expander('Card Reader/Writer (optional)')
+expander6.image(f'Hardware//card.png', width=200)
+expander6.write('Relevant for developers')
+
+st.subheader('Self-purchase:')
+
+expander3 = st.expander('Micro-USB cable')
+expander3.image(f'Hardware//cable.png', width=200)
+
+expander4 = st.expander('Network cable')
+expander4.image(f'Hardware//n-cable.png', width=200)
+
+expander5 = st.expander('AA batteries')
+expander5.image(f'Hardware//battery.png', width=150)
 
 st.write('---')
 
