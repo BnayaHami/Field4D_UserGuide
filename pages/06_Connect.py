@@ -78,7 +78,7 @@ with st.expander("Independent Setup with Ethernet"):
 with st.expander("Alternative Setup Using a SIM Router"):
         st.markdown("""
         If you don’t have a wired Ethernet connection, you can use a router that allows the insertion of a SIM card for wireless connectivity.
-        A basic data package (around **5GB per month**) should be sufficient for the experiment.
+        A basic data package (around **5GB per month**) should be sufficient.
         Ensure the router has two network cable ports to connect both the Raspberry Pi and your computer.
         """)
 
@@ -89,7 +89,7 @@ st.markdown('<p class="big-font">Finding the Raspberry Pi IP Address</p>', unsaf
 st.markdown("""
 Once both your computer and the Raspberry Pi are connected to the same network, open the command line on your computer and type the
 command `arp -a`. This will list devices connected to the network, showing two IP addresses: one for your computer and one for the Raspberry Pi.
-Test both addresses to determine which one belongs to the Pi.
+One of them belongs to the Pi.
 
 By following these steps, you’ll ensure a stable and accessible connection to your Raspberry Pi for your experiment.
 """)
@@ -119,7 +119,8 @@ with tab1:
 
 with tab2:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Connect the LaunchPad (to any of the USB ports)<b></p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-fonts"><b>Connect the LaunchPad<b></p>', unsafe_allow_html=True)
+    st.info('Make sure to connect the LaunchPad to one of the grey USB ports of the Raspberry Pi, not the blue ones')
     st.image(f'Connect//lp.png')
 
 with tab3:
