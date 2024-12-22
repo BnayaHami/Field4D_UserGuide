@@ -52,6 +52,9 @@ expander2.image(f'Hardware//power.png', width=200)
 expander2.write('Suggestion for online purchase:')
 expander2.write('https://piitel.co.il/shop/27w-usb-c-psu/')
 
+expander3 = st.expander('Micro-USB cable')
+expander3.image(f'Hardware//cable.png', width=200)
+
 expander7 = st.expander('LaunchPad CC2650')
 expander7.image(f'Hardware//gw.png', width=200)
 
@@ -72,8 +75,7 @@ expander6.write('Relevant for developers')
 
 st.subheader('Self-purchase:')
 
-expander3 = st.expander('Micro-USB cable')
-expander3.image(f'Hardware//cable.png', width=200)
+
 
 expander4 = st.expander('Network cable')
 expander4.image(f'Hardware//n-cable.png', width=200)
