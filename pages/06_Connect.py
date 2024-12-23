@@ -299,19 +299,16 @@ if version == "Version 1":
     tab14, tab15, tab16, tab17, tab18, tab19 = st.tabs(['1', '2', '3', '4', '5', '6'])
 
     with tab14:
-        st.info('Version 1')
         st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
         st.image(f'Connect//equipment.png')
 
     with tab15:
-        st.info('Version 1')
         st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-fonts"><b>Connect the clamp to the poles<b></p>', unsafe_allow_html=True)  
         st.image(f'Connect//clamp.png')
 
     with tab16:
-        st.info('Version 1')
         st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
         st.write("STL files of this holder are available for download (below)")
@@ -322,20 +319,17 @@ if version == "Version 1":
         st.image(f'Connect//old_cover.png')
 
     with tab17:
-        st.info('Version 1')
         st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-fonts"><b>Connect the sensor to the pole<b></p>', unsafe_allow_html=True)
         st.info("**Note:** Make sure you place the sensor so the arrow on the holder points north, to enable illumination of the light sensor and cover the other sensors")
         st.image(f'Connect//holder.png')
 
     with tab18:
-        st.info('Version 1')
         st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-fonts"><b>Example in the greenhouse<b></p>', unsafe_allow_html=True)  
         st.image(f'Connect//sp_green.png')   
 
     with tab19:
-        st.info('Version 1')
         st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-fonts"><b>Two heights sensors<b></p>', unsafe_allow_html=True)  
         st.image(f'Connect//two_h.png')
@@ -369,14 +363,12 @@ elif version == "Version 2":
     tab20, tab21, tab22 = st.tabs(['1', '2', '3'])
 
     with tab20:
-        st.info('Version 2')  
         st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
         st.info('Note that in this version, the sensor should be placed in the cover with both the black and the transparent parts')
         st.image(f'Connect//equipment_2.png')
 
     with tab21:
-        st.info('Version 2')
         st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
         st.write("STL files of this holder are available for download (below)")
@@ -386,7 +378,6 @@ elif version == "Version 2":
         st.image(f'Connect//new_cover.png')
 
     with tab22:
-        st.info('Version 2')
         st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
         st.markdown('<p class="big-fonts"><b>Example in the greenhouse<b></p>', unsafe_allow_html=True)  
         st.image(f'Connect//sp_green2.png')
