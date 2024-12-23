@@ -291,11 +291,12 @@ st.info("**Note:** This is our recommended sensor placement for the greenhouse. 
 st.info('Two versions of the sensor holder are shown below, you can choose the one that suits you best')
 st.write("Two sensors are assigned for each plant, one of them is in the height of the canopy (gradually raised up during the plant's growth), and the second one at a high place above the plant. We do that in order to measure meteorological data in the plant's close environment and the layer above that affects it")
 
-tab14, tab15, tab16, tab17, tab18, tab19, tab20, tab21, tab22 = st.tabs(['Ver1-1', '2', '3', '4', '5', '6', 'Ver1-1', '2', '3'])
+tab14, tab15, tab16, tab17, tab18, tab19, tab20, tab21, tab22 = st.tabs(['1', '2', '3', '4', '5', '6', '7', '8', '9'])
 
 with tab14:
+    st.info('Version 1')
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)  
+    st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
     st.image(f'Connect//equipment.png')
 
 with tab15:
@@ -330,6 +331,7 @@ with tab19:
     st.image(f'Connect//two_h.png')
 
 with tab20:
+    st.info('Version 2')  
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
     st.info('Note that in this version, the sensor should be placed in the cover with both the black and the transparent parts')
