@@ -357,8 +357,8 @@ st.write('---')
 st.subheader("Appendix - STL Files for 3D Printing")
 
 # Paths to the predefined STL files
-stl_file_path_1 = os.path.join(os.path.dirname(__file__), 'Base_SP.stl')
-stl_file_path_2 = os.path.join(os.path.dirname(__file__), 'Base_With_Cover.stl')
+stl_file_path_1 = os.path.join(os.path.dirname(__file__), 'Base_With_Cover.stl')
+stl_file_path_2 = os.path.join(os.path.dirname(__file__), 'SP_assaf.stl')
 
 # Load the STL files
 mesh1 = mesh.Mesh.from_file(stl_file_path_1)
@@ -383,7 +383,7 @@ fig1 = go.Figure(data=[go.Mesh3d(
     color='grey',
     opacity=1,
     showscale=False,
-    name='Base_SP'
+    name='Base_With_Cover'
 )])
 
 fig2 = go.Figure(data=[go.Mesh3d(
@@ -396,7 +396,7 @@ fig2 = go.Figure(data=[go.Mesh3d(
     color='grey',
     opacity=1,
     showscale=False,
-    name='Base_With_Cover'
+    name='SP_assaf'
 )])
 
 # Update the layout for better visualization and aspect ratio
@@ -415,24 +415,24 @@ for fig in [fig1, fig2]:
 tab101, tab102 = st.tabs(["Ver1", "Ver2"])
 
 with tab101:
-    st.write('Basic SensorTag Holder')
+    st.write('First version')
     st.plotly_chart(fig1)
     with open(stl_file_path_1, "rb") as file1:
         st.download_button(
             label="Download STL file",
             data=file1,
-            file_name="Base_SP.stl",
+            file_name="Base_With_Cover.stl",
             mime="application/octet-stream"
         )
 
 with tab102:
-    st.write('SensorTag Holder with built-in Cover')
+    st.write('Second version')
     st.plotly_chart(fig2)
     with open(stl_file_path_2, "rb") as file2:
         st.download_button(
             label="Download STL file",
             data=file2,
-            file_name="Base_With_Cover.stl",
+            file_name="SP_assaf.stl",
             mime="application/octet-stream"
         )
 
