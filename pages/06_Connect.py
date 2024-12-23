@@ -374,7 +374,7 @@ elif version == "Version 2":
         st.write("STL files of this holder are available for download (below)")
         st.write("1. Insert the sensor into the cover")
         st.write("2. Insert the second part of the cover with a click. Make sure the light sensor is placed under the hole and exposed to light")
-        st.write("3. Example usage")
+        st.write("3. Insert the white stick into the cover, and place in the relevant location")
         st.image(f'Connect//new_cover.png')
 
     with tab22:
