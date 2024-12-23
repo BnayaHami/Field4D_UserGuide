@@ -291,159 +291,126 @@ st.info("**Note:** This is our recommended sensor placement for the greenhouse. 
 st.info('Two versions of the sensor holder are shown below, you can choose the one that suits you best')
 st.write("Two sensors are assigned for each plant, one of them is in the height of the canopy (gradually raised up during the plant's growth), and the second one at a high place above the plant. We do that in order to measure meteorological data in the plant's close environment and the layer above that affects it")
 
-tab14, tab15, tab16, tab17, tab18, tab19, tab20, tab21, tab22 = st.tabs(['1', '2', '3', '4', '5', '6', '7', '8', '9'])
+# Create a selectbox for choosing between versions
+version = st.selectbox("Choose the version:", ["Version 1", "Version 2"])
 
-with tab14:
-    st.info('Version 1')
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
-    st.image(f'Connect//equipment.png')
+if version == "Version 1":
+    # Tabs for Version 1
+    tab14, tab15, tab16, tab17, tab18, tab19 = st.tabs(['1', '2', '3', '4', '5', '6'])
 
-with tab15:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Connect the clamp to the poles<b></p>', unsafe_allow_html=True)  
-    st.image(f'Connect//clamp.png')
+    with tab14:
+        st.info('Version 1')
+        st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+        st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
+        st.image(f'Connect//equipment.png')
 
-with tab16:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
-    st.write("STL files of this holder are available for download (below)")
-    st.write("1. Place the sensor into its little black cover")
-    st.write("2. This is the orientation in which the sensor should go into the holder")
-    st.write("3. Make sure the light sensor is placed under the hole and exposed to light")
-    st.write("4. Connect the sensor to the batteries case using a hot glue gun")
-    st.image(f'Connect//old_cover.png')
+    with tab15:
+        st.info('Version 1')
+        st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+        st.markdown('<p class="big-fonts"><b>Connect the clamp to the poles<b></p>', unsafe_allow_html=True)  
+        st.image(f'Connect//clamp.png')
 
-with tab17:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Connect the sensor to the pole<b></p>', unsafe_allow_html=True)
-    st.info("**Note:** Make sure you place the sensor so the arrow on the holder points north, to enable illumination of the light sensor and cover the other sensors")
-    st.image(f'Connect//holder.png')
+    with tab16:
+        st.info('Version 1')
+        st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+        st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
+        st.write("STL files of this holder are available for download (below)")
+        st.write("1. Place the sensor into its little black cover")
+        st.write("2. This is the orientation in which the sensor should go into the holder")
+        st.write("3. Make sure the light sensor is placed under the hole and exposed to light")
+        st.write("4. Connect the sensor to the batteries case using a hot glue gun")
+        st.image(f'Connect//old_cover.png')
 
-with tab18:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Example in the greenhouse<b></p>', unsafe_allow_html=True)  
-    st.image(f'Connect//sp_green.png')   
+    with tab17:
+        st.info('Version 1')
+        st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+        st.markdown('<p class="big-fonts"><b>Connect the sensor to the pole<b></p>', unsafe_allow_html=True)
+        st.info("**Note:** Make sure you place the sensor so the arrow on the holder points north, to enable illumination of the light sensor and cover the other sensors")
+        st.image(f'Connect//holder.png')
 
-with tab19:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Two heights sensors<b></p>', unsafe_allow_html=True)  
-    st.image(f'Connect//two_h.png')
+    with tab18:
+        st.info('Version 1')
+        st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+        st.markdown('<p class="big-fonts"><b>Example in the greenhouse<b></p>', unsafe_allow_html=True)  
+        st.image(f'Connect//sp_green.png')   
 
-with tab20:
-    st.info('Version 2')  
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
-    st.info('Note that in this version, the sensor should be placed in the cover with both the black and the transparent parts')
-    st.image(f'Connect//equipment_2.png')
+    with tab19:
+        st.info('Version 1')
+        st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+        st.markdown('<p class="big-fonts"><b>Two heights sensors<b></p>', unsafe_allow_html=True)  
+        st.image(f'Connect//two_h.png')
 
-with tab21:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
-    st.write("STL files of this holder are available for download (below)")
-    st.write("1. insert the sensor into the the cover")
-    st.write("2. insert the second part of the cover with a click. Make sure the light sensor is placed under the hole and exposed to light")
-    st.write("3. Example usage")
-    st.image(f'Connect//new_cover.png')
-
-with tab22:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Example in the greenhouse<b></p>', unsafe_allow_html=True)  
-    st.image(f'Connect//sp_green2.png') 
-
-st.write('---')
-
-
-## Title of the Streamlit app
-st.subheader("Appendix - STL Files for 3D Printing")
-
-# Paths to the predefined STL files
-stl_file_path_1 = os.path.join(os.path.dirname(__file__), 'Base_With_Cover.stl')
-stl_file_path_2 = os.path.join(os.path.dirname(__file__), 'SP_assaf.stl')
-
-# Load the STL files
-mesh1 = mesh.Mesh.from_file(stl_file_path_1)
-mesh2 = mesh.Mesh.from_file(stl_file_path_2)
-
-# Extract the vertices and  faces for the first STL file
-vertices1 = mesh1.points.reshape(-1, 3)
-faces1 = np.arange(len(vertices1)).reshape(-1, 3)
-
-# Extract the vertices and faces for the second STL file
-vertices2 = mesh2.points.reshape(-1, 3)
-faces2 = np.arange(len(vertices2)).reshape(-1, 3)
-
-# Create Plotly figures
-fig1 = go.Figure(data=[go.Mesh3d(
-    x=vertices1[:, 0],
-    y=vertices1[:, 1],
-    z=vertices1[:, 2],
-    i=faces1[:, 0],
-    j=faces1[:, 1],
-    k=faces1[:, 2],
-    color='grey',
-    opacity=1,
-    showscale=False,
-    name='Base_With_Cover'
-)])
-
-fig2 = go.Figure(data=[go.Mesh3d(
-    x=vertices2[:, 0],
-    y=vertices2[:, 1],
-    z=vertices2[:, 2],
-    i=faces2[:, 0],
-    j=faces2[:, 1],
-    k=faces2[:, 2],
-    color='grey',
-    opacity=1,
-    showscale=False,
-    name='SP_assaf'
-)])
-
-# Update the layout for better visualization and aspect ratio
-for fig in [fig1, fig2]:
-    fig.update_layout(
-        scene=dict(
-            xaxis=dict(visible=False),
-            yaxis=dict(visible=False),
-            zaxis=dict(visible=False),
-            aspectmode='data'
-        ),
-        margin=dict(r=0, l=0, b=0, t=0)
-    )
-
-# Create tabs for navigation
-tab101, tab102 = st.tabs(["Ver1", "Ver2"])
-
-with tab101:
-    st.write('First version')
+    # STL file handling for Version 1
+    st.write('---')
+    st.subheader("Appendix - STL Files for 3D Printing")
+    stl_file_path_1 = os.path.join(os.path.dirname(__file__), 'Base_With_Cover.stl')
+    mesh1 = mesh.Mesh.from_file(stl_file_path_1)
+    vertices1 = mesh1.points.reshape(-1, 3)
+    faces1 = np.arange(len(vertices1)).reshape(-1, 3)
+    fig1 = go.Figure(data=[go.Mesh3d(
+        x=vertices1[:, 0],
+        y=vertices1[:, 1],
+        z=vertices1[:, 2],
+        i=faces1[:, 0],
+        j=faces1[:, 1],
+        k=faces1[:, 2],
+        color='grey',
+        opacity=1,
+        showscale=False,
+        name='Base_With_Cover'
+    )])
+    fig1.update_layout(scene=dict(xaxis=dict(visible=False), yaxis=dict(visible=False), zaxis=dict(visible=False), aspectmode='data'), margin=dict(r=0, l=0, b=0, t=0))
     st.plotly_chart(fig1)
     with open(stl_file_path_1, "rb") as file1:
-        st.download_button(
-            label="Download STL file",
-            data=file1,
-            file_name="Base_With_Cover.stl",
-            mime="application/octet-stream"
-        )
+        st.download_button(label="Download STL file", data=file1, file_name="Base_With_Cover.stl", mime="application/octet-stream")
 
-with tab102:
-    st.write('Second version')
+elif version == "Version 2":
+    # Tabs for Version 2
+    tab20, tab21, tab22 = st.tabs(['1', '2', '3'])
+
+    with tab20:
+        st.info('Version 2')  
+        st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+        st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
+        st.info('Note that in this version, the sensor should be placed in the cover with both the black and the transparent parts')
+        st.image(f'Connect//equipment_2.png')
+
+    with tab21:
+        st.info('Version 2')
+        st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+        st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
+        st.write("STL files of this holder are available for download (below)")
+        st.write("1. Insert the sensor into the cover")
+        st.write("2. Insert the second part of the cover with a click. Make sure the light sensor is placed under the hole and exposed to light")
+        st.write("3. Example usage")
+        st.image(f'Connect//new_cover.png')
+
+    with tab22:
+        st.info('Version 2')
+        st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+        st.markdown('<p class="big-fonts"><b>Example in the greenhouse<b></p>', unsafe_allow_html=True)  
+        st.image(f'Connect//sp_green2.png')
+
+    # STL file handling for Version 2
+    st.write('---')
+    st.subheader("Appendix - STL Files for 3D Printing")
+    stl_file_path_2 = os.path.join(os.path.dirname(__file__), 'SP_assaf.stl')
+    mesh2 = mesh.Mesh.from_file(stl_file_path_2)
+    vertices2 = mesh2.points.reshape(-1, 3)
+    faces2 = np.arange(len(vertices2)).reshape(-1, 3)
+    fig2 = go.Figure(data=[go.Mesh3d(
+        x=vertices2[:, 0],
+        y=vertices2[:, 1],
+        z=vertices2[:, 2],
+        i=faces2[:, 0],
+        j=faces2[:, 1],
+        k=faces2[:, 2],
+        color='grey',
+        opacity=1,
+        showscale=False,
+        name='SP_assaf'
+    )])
+    fig2.update_layout(scene=dict(xaxis=dict(visible=False), yaxis=dict(visible=False), zaxis=dict(visible=False), aspectmode='data'), margin=dict(r=0, l=0, b=0, t=0))
     st.plotly_chart(fig2)
     with open(stl_file_path_2, "rb") as file2:
-        st.download_button(
-            label="Download STL file",
-            data=file2,
-            file_name="SP_assaf.stl",
-            mime="application/octet-stream"
-        )
-
-# Update the layout for better visualization and aspect ratio
-fig.update_layout(
-    scene=dict(
-        xaxis=dict(visible=False),
-        yaxis=dict(visible=False),
-        zaxis=dict(visible=False),
-        aspectmode='data'
-    ),
-    margin=dict(r=0, l=0, b=0, t=0)
-)
+        st.download_button(label="Download STL file", data=file2, file_name="SP_assaf.stl", mime="application/octet-stream")
