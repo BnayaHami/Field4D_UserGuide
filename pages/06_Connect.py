@@ -329,11 +329,11 @@ with tab19:
     st.markdown('<p class="big-fonts"><b>Two heights sensors<b></p>', unsafe_allow_html=True)  
     st.image(f'Connect//two_h.png')
 
-# with tab20:
-#     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-#     st.info('Suggested here another cover version')
-#     st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
-#     st.image(f'Connect//equipment2.png')
+with tab20:
+    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+    st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
+    st.info('Suggested here another cover version')
+    st.image(f'Connect//equipment2.png')
 
 # with tab21:
 #     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
