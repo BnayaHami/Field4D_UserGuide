@@ -288,9 +288,10 @@ st.write('---')
 st.header('3. Position Sensors in the Measurement Area')
 
 st.info("**Note:** This is our recommended sensor placement for the greenhouse. We strongly advise following it closely to ensure optimal results")
+st.info('Two versions of the sensor holder are shown below, you can choose the one that suits you best')
 st.write("Two sensors are assigned for each plant, one of them is in the height of the canopy (gradually raised up during the plant's growth), and the second one at a high place above the plant. We do that in order to measure meteorological data in the plant's close environment and the layer above that affects it")
 
-tab14, tab15, tab16, tab17, tab18, tab19, tab20, tab21, tab22 = st.tabs(['1', '2', '3', '4', '5', '6', '7', '8', '9'])
+tab14, tab15, tab16, tab17, tab18, tab19, tab20, tab21, tab22 = st.tabs(['Ver1-1', 'Ver1-2', 'Ver1-3', 'Ver1-4', 'Ver1-5', 'Ver1-6', 'Ver1-1', 'Ver1-2', 'Ver1-3'])
 
 with tab14:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
@@ -315,7 +316,6 @@ with tab16:
 with tab17:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Connect the sensor to the pole<b></p>', unsafe_allow_html=True)
-    st.write("That's how it should look like")
     st.info("**Note:** Make sure you place the sensor so the arrow on the holder points north, to enable illumination of the light sensor and cover the other sensors")
     st.image(f'Connect//holder.png')
 
@@ -332,16 +332,15 @@ with tab19:
 with tab20:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
-    st.info('Suggested here another cover version')
+    st.info('Note that in this version, the sensor should be placed in the cover with both the black and the transparent parts')
     st.image(f'Connect//equipment_2.png')
 
 with tab21:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
     st.write("STL files of this holder are available for download (below)")
-    st.info('Note that in this version, the sensor should be placed in the cover with both the black and the transparent parts')
     st.write("1. insert the sensor into the the cover")
-    st.write("2. insert the second part of the cover, it should get in with a click. Make sure the light sensor is placed under the hole and exposed to light")
+    st.write("2. insert the second part of the cover with a click. Make sure the light sensor is placed under the hole and exposed to light")
     st.write("3. Example usage")
     st.image(f'Connect//new_cover.png')
 
