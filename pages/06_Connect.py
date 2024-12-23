@@ -329,26 +329,26 @@ with tab19:
     st.markdown('<p class="big-fonts"><b>Two heights sensors<b></p>', unsafe_allow_html=True)  
     st.image(f'Connect//two_h.png')
 
-with tab20:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.info('Suggested here another cover version')
-    st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
-    st.image(f'Connect//equipment2.png')
+# with tab20:
+#     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+#     st.info('Suggested here another cover version')
+#     st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
+#     st.image(f'Connect//equipment2.png')
 
-with tab21:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
-    st.write("STL files of this holder are available for download (below)")
-    st.info('Note that in this version, the sensor should be placed in the cover with both the black and the transparent parts')
-    st.write("1. insert the sensor into the the cover")
-    st.write("2. insert the second part of the cover, it should get in with a click. Make sure the light sensor is placed under the hole and exposed to light")
-    st.write("3. Example usage")
-    st.image(f'Connect//new_cover.png')
+# with tab21:
+#     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+#     st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
+#     st.write("STL files of this holder are available for download (below)")
+#     st.info('Note that in this version, the sensor should be placed in the cover with both the black and the transparent parts')
+#     st.write("1. insert the sensor into the the cover")
+#     st.write("2. insert the second part of the cover, it should get in with a click. Make sure the light sensor is placed under the hole and exposed to light")
+#     st.write("3. Example usage")
+#     st.image(f'Connect//new_cover.png')
 
-with tab22:
-    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Example in the greenhouse<b></p>', unsafe_allow_html=True)  
-    st.image(f'Connect//sp_green2.png') 
+# with tab22:
+#     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+#     st.markdown('<p class="big-fonts"><b>Example in the greenhouse<b></p>', unsafe_allow_html=True)  
+#     st.image(f'Connect//sp_green2.png') 
 
 st.write('---')
 
