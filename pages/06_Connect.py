@@ -287,11 +287,10 @@ st.write('---')
 
 st.header('3. Position Sensors in the Measurement Area')
 
-st.write("**Note**: this is our suggestion for placing the sensors in a greenhouse:")
-st.write("Two sensors are assigned for each plant, one of them is in the height of the canopy (gradually raised up during the plant's growth), and the second one at a high place above the plant")
-st.write("We do that in order to measure meteorological data in the plant's close environment and the layer above that affects it. We are using clamps and metal poles to place the sensors, as will be shown below")
+st.info("**Note:** This is our recommended sensor placement for the greenhouse. We strongly advise following it closely to ensure optimal results")
+st.write("Two sensors are assigned for each plant, one of them is in the height of the canopy (gradually raised up during the plant's growth), and the second one at a high place above the plant. We do that in order to measure meteorological data in the plant's close environment and the layer above that affects it")
 
-tab14, tab15, tab16, tab17, tab18, tab19 = st.tabs(['1', '2', '3', '4', '5', '6'])
+tab14, tab15, tab16, tab17, tab18, tab19, tab20, tab21, tab22 = st.tabs(['1', '2', '3', '4', '5', '6', '7', '8', '9'])
 
 with tab14:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
@@ -307,19 +306,17 @@ with tab16:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
     st.write("STL files of this holder are available for download (below)")
-    st.write("1. Place the sensor into its cover (black)")
+    st.write("1. Place the sensor into its little black cover")
     st.write("2. This is the orientation in which the sensor should go into the holder")
     st.write("3. Make sure the light sensor is placed under the hole and exposed to light")
-    st.write("4. Connect the sensor to the batteries case using a zip tie")
-    st.image(f'Connect//sp_place.png')
+    st.write("4. Connect the sensor to the batteries case using a hot glue gun")
+    st.image(f'Connect//old_cover.png')
 
 with tab17:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Connect the sensor to the pole<b></p>', unsafe_allow_html=True)
-    st.write("1. Make a hole in the pole, and pass a metal string through the holes of the holder and the pole to tie them together")
-    st.write("2. That's how it should look like")
-    st.write("3. Insert a cover (cardboard or plastic) to the holder's slot. This is done to prevent the temperature sensor from heating and give a wrong reading")
-    st.write("**Note:** Make sure you place the sensor so the arrow on the holder points north, to enable illumination of the light sensor and cover the other sensors")
+    st.write("That's how it should look like")
+    st.info("**Note:** Make sure you place the sensor so the arrow on the holder points north, to enable illumination of the light sensor and cover the other sensors")
     st.image(f'Connect//holder.png')
 
 with tab18:
@@ -330,8 +327,28 @@ with tab18:
 with tab19:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
     st.markdown('<p class="big-fonts"><b>Two heights sensors<b></p>', unsafe_allow_html=True)  
-    st.image(f'Connect//two_h.png')   
+    st.image(f'Connect//two_h.png')
 
+with tab20:
+    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+    st.info('Suggested here another cover version')
+    st.markdown('<p class="big-fonts"><b>All the parts for placing a sensor<b></p>', unsafe_allow_html=True)
+    st.image(f'Connect//equipment2.png')
+
+with tab21:
+    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+    st.markdown('<p class="big-fonts"><b>Place the sensor into its holder<b></p>', unsafe_allow_html=True)
+    st.write("STL files of this holder are available for download (below)")
+    st.info('Note that in this version, the sensor should be placed in the cover with both the black and the transparent parts')
+    st.write("1. insert the sensor into the the cover")
+    st.write("2. insert the second part of the cover, it should get in with a click. Make sure the light sensor is placed under the hole and exposed to light")
+    st.write("3. Example usage")
+    st.image(f'Connect//new_cover.png')
+
+with tab22:
+    st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
+    st.markdown('<p class="big-fonts"><b>Example in the greenhouse<b></p>', unsafe_allow_html=True)  
+    st.image(f'Connect//sp_green2.png') 
 
 st.write('---')
 
@@ -429,74 +446,3 @@ fig.update_layout(
     ),
     margin=dict(r=0, l=0, b=0, t=0)
 )
-
-
-
-
-
-
-
-
-# footer
-
-# import htbuilder
-# from htbuilder import HtmlElement, div, ul, li, br, hr, a, p, img, styles, classes, fonts
-# from htbuilder.units import percent, px
-# from htbuilder.funcs import rgba, rgb
-
-
-# def image(src_as_string, **style):
-#     return img(src=src_as_string, style=styles(**style))
-
-# def link(link, text, **style):
-#     return a(_href=link, _target="_blank", style=styles(**style))(text)
-
-# def layout(*args):
-
-#     style = """
-#     <style>
-#       # MainMenu {visibility: hidden;}
-#       footer {visibility: hidden;}
-#     </style>
-#     """
-
-#     style_div = styles(
-#         left=0,
-#         bottom=0,
-#         margin=px(0, 0, 0, 0),
-#         width=percent(100),
-#         text_align="center",
-#         height="0px",
-#         opacity=0.8
-#     )
-
-#     style_hr = styles(
-#     )
-
-#     body = p()
-#     foot = div(style=style_div)(hr(style=style_hr), body)
-
-#     st.markdown(style, unsafe_allow_html=True)
-
-#     for arg in args:
-#         if isinstance(arg, str):
-#             body(arg)
-#         elif isinstance(arg, HtmlElement):
-#             body(arg)
-
-#     st.markdown(str(foot), unsafe_allow_html=True)
-
-# def footer():
-#     myargs = [
-#         "<b> GitHub <b>",
-#         link("https://github.com/", image('https://i.pinimg.com/736x/b1/5e/ed/b15eedbdafbbdbca3249e3942f4faf3b.jpg',
-#         	width=px(30), height=px(30), margin= "0em")),
-#         " Our Website ",
-#         link("https://streamlit.io/", image('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1523002.jpg',
-#         	width=px(30), height=px(30), margin= "0em")),
-#         br(),
-#     ]
-#     layout(*myargs)
-
-# if __name__ == "__main__":
-#     footer()
