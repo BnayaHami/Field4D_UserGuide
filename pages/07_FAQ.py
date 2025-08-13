@@ -30,7 +30,7 @@ st.markdown(
     """
 <style>
 .streamlit-expanderHeader {
-    font-size: 19px;
+    font-size: 30px;
     font-weight:bold;
 }
 </style>
@@ -77,6 +77,10 @@ with st.expander('Writing error on Uniflash'):
     st.markdown('<p class="big-font">if you are getting the following error while writing the SensorTag/LaunchPad:</p>', unsafe_allow_html=True)
     st.image(f'FAQ//debug.png')
     st.markdown('<p class="big-font">Press "Update"</p>', unsafe_allow_html=True)
+
+st.subheader('Field4D Scheme')
+st.image(f'FAQ//scheme.png', width=800)
+
 
 # expander1 = st.expander('Downloading Uniflash')
 # expander1.tab1.write('Downloading Uniflash')

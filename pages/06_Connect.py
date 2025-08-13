@@ -202,6 +202,11 @@ with tab9:
         dict(
             title='',
             text='',
+            img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/login_page.png"
+        ),
+        dict(
+            title='',
+            text='',
             img="https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/Connect/dashboard_1.png"
         ),
         dict(

@@ -26,16 +26,20 @@ st.header('The first step')
 
 st.markdown("<style> .big-fontl {font-size:20px !important; color:red} </style>", unsafe_allow_html=True)
 
-st.markdown("<style> .big-font {font-size:23px !important;} </style>", unsafe_allow_html=True)
-st.markdown("""<p class="big-font">The first step is sign in/open an account in our website. To do so, go the website and sign up through your google/facebook account</p>""", unsafe_allow_html=True)
+st.write('The first step is to sign in to our website. the url is https://field4d.com', unsafe_allow_html=True)
+
+st.image(f'FirstStep/login_f4d.png', width=600)
+
+st.write('We will send you an email with your username and password after your payment has been confirmed. If you have not received it, please contact us. On the website, you will be able to track your experiments, analyze them, and download the data collected by the system. For now, you can already view two demo experiments on the website to help you understand how the system works.')
+st.info('Please note that this website is only for viewing and analyzing collected data. To set up the system and manage experiments, you will find the instructions in the next sections of this user guide')
 
 # st.markdown("<style> .big-fonts {font-size:20px !important;} </style>", unsafe_allow_html=True)
 # st.markdown('<p class="big-fonts">here is the link to the website:</p>', unsafe_allow_html=True)
 
-st.markdown("""<p class="big-fontl">-Not avalible at the moment, you can skip that for now-</p>""", unsafe_allow_html=True)
+st.markdown("<style> .big-fontshl {font-size:21px !important} </style>", unsafe_allow_html=True)
+st.markdown("<style> .big-fontshls {font-size:21px !important; color: grey !important;} </style>", unsafe_allow_html=True)
 
-st.markdown("<style> .big-fontshl {font-size:21px !important;} </style>", unsafe_allow_html=True)
-st.markdown("<style> .big-fontsh {font-size:17px !important;} </style>", unsafe_allow_html=True)
+st.markdown("<style> .big-fontshy {font-size:17px !important; color: grey !important;} </style>", unsafe_allow_html=True)
 
 st.write('---')
 
@@ -45,11 +49,11 @@ st.markdown("""<p class="big-fonts">On the sidebar, you will find all the necess
 st.markdown("""<p class="big-fontshl"><b>Hardware:<b></p>""", unsafe_allow_html=True)
 st.markdown("""<p class="big-fontsh">Lists all the equipment required for the system</p>""", unsafe_allow_html=True)
 
-st.markdown("""<p class="big-fontshl"><b>Firmware:<b></p>""", unsafe_allow_html=True)
-st.markdown("""<p class="big-fontsh">Manage the OS of the Raspberry Pi and the firmware of the LaunchPad and sensors (relevant primarily for developers). If you are a developer, this is a required part of the installation</p>""", unsafe_allow_html=True)
+st.markdown("""<p class="big-fontshls"><b>Firmware:<b></p>""", unsafe_allow_html=True)
+st.markdown("""<p class="big-fontshy">Manage the OS of the Raspberry Pi and the firmware of the LaunchPad and sensors (relevant primarily for developers). If you are a developer, this is a required part of the installation</p>""", unsafe_allow_html=True)
 
-st.markdown("""<p class="big-fontshl"><b>Software:<b></p>""", unsafe_allow_html=True)
-st.markdown("""<p class="big-fontsh">Provides guides and useful tools for managing the software (relevant primarily for developers), this part is not required for the installation</p>""", unsafe_allow_html=True)
+st.markdown("""<p class="big-fontshls"><b>Software:<b></p>""", unsafe_allow_html=True)
+st.markdown("""<p class="big-fontshy">Provides guides and useful tools for managing the software (relevant primarily for developers), this part is not required for the installation</p>""", unsafe_allow_html=True)
 
 st.markdown("""<p class="big-fontshl"><b>Connect:<b></p>""", unsafe_allow_html=True)
 st.markdown("""<p class="big-fontsh">Explains how to conncet all the parts in the system and start collecting data</p>""", unsafe_allow_html=True)
