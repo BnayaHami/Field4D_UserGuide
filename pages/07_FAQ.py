@@ -79,7 +79,7 @@ with st.expander('Writing error on Uniflash'):
     st.markdown('<p class="big-font">Press "Update"</p>', unsafe_allow_html=True)
 
 st.subheader('Field4D Scheme')
-st.image(f'FAQ//scheme.png', width=800)
+st.image(f'FAQ//Scheme.png', width=800)
 
 
 # expander1 = st.expander('Downloading Uniflash')
