@@ -17,10 +17,8 @@ logo_url = "https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/f
 st.logo(logo_url)
 
 st.sidebar.markdown("# Contact us")
-st.sidebar.markdown('**IT Support Manager:** bnaya.hami@mail.huji.ac.il')
+st.sidebar.markdown('**Support:** f4d_support@field4d.com')
 st.sidebar.markdown('**Customer relations manager:** gal.naftal@mail.huji.ac.il')
-st.sidebar.markdown('**Systems Administrator:** nir.averbuch@mail.huji.ac.il')
-st.sidebar.markdown('**CEO:** menachem.moshelion@mail.huji.ac.il')
 
 st.header('The first step')
 
