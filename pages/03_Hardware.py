@@ -18,8 +18,8 @@ logo_url = "https://raw.githubusercontent.com/BnayaHami/Field4D_UserGuide/main/f
 st.logo(logo_url)
 
 st.sidebar.markdown("# Contact us")
-st.sidebar.markdown('**Support:** f4d_support@field4d.com')
-st.sidebar.markdown('**Customer relations manager:** gal.naftal@mail.huji.ac.il')
+st.sidebar.markdown('f4d_support@field4d.com')
+
 
 # titles
 st.title('Hardware')
