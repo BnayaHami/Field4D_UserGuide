@@ -43,7 +43,7 @@ st.sidebar.markdown('f4d_support@field4d.com')
 
 st.title('Software')
 
-st.markdown("<style> .big-font {font-size:22px !important; color:red} </style>", unsafe_allow_html=True)
+st.markdown("<style> .big-font {font-size:22px !important; color:green} </style>", unsafe_allow_html=True)
 st.markdown('<p class="big-font">✱ <b>for developers<b></p>', unsafe_allow_html=True)
 st.markdown('**Note:** This section is not required for the installation, and is refers to some guides and commands useful for developers')
 
@@ -234,81 +234,3 @@ if query:
     st.code(mongo_query_global, language="python")
 
     st.write('Check out this link for more information: \nhttps://www.w3schools.com/python/python_mongodb_getstarted.asp')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# footer
-
-# import htbuilder
-# from htbuilder import HtmlElement, div, ul, li, br, hr, a, p, img, styles, classes, fonts
-# from htbuilder.units import percent, px
-# from htbuilder.funcs import rgba, rgb
-
-# def image(src_as_string, **style):
-#     return img(src=src_as_string, style=styles(**style))
-
-# def link(link, text, **style):
-#     return a(_href=link, _target="_blank", style=styles(**style))(text)
-
-# def layout(*args):
-
-#     style = """
-#     <style>
-#       # MainMenu {visibility: hidden;}
-#       footer {visibility: hidden;}
-#     </style>
-#     """
-
-#     style_div = styles(
-#         left=0,
-#         bottom=0,
-#         margin=px(0, 0, 0, 0),
-#         width=percent(100),
-#         text_align="center",
-#         height="0px",
-#         opacity=0.8
-#     )
-
-#     style_hr = styles(
-#     )
-
-#     body = p()
-#     foot = div(style=style_div)(hr(style=style_hr), body)
-
-#     st.markdown(style, unsafe_allow_html=True)
-
-#     for arg in args:
-#         if isinstance(arg, str):
-#             body(arg)
-#         elif isinstance(arg, HtmlElement):
-#             body(arg)
-
-#     st.markdown(str(foot), unsafe_allow_html=True)
-
-
-# def footer():
-#     myargs = [
-#         "<b> GitHub <b>",
-#         link("https://github.com/", image('https://i.pinimg.com/736x/b1/5e/ed/b15eedbdafbbdbca3249e3942f4faf3b.jpg',
-#         	width=px(30), height=px(30), margin= "0em")),
-#         " Our Website ",
-#         link("https://streamlit.io/", image('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX1523002.jpg',
-#         	width=px(30), height=px(30), margin= "0em")),
-#         br(),
-#     ]
-#     layout(*myargs)
-
-# if __name__ == "__main__":
-#     footer()

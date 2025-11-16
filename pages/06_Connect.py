@@ -41,7 +41,7 @@ To set up the system, follow these three stages:
 </ol>
 """, unsafe_allow_html=True)
 
-st.warning("**IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits sensitive to static electricity. Before handling, discharge any static voltage by touching a metallic object to prevent short circuits or potential fire hazards")
+st.warning("""**⚠️ IMPORTANT:** All boards and sensors (Raspberry Pi, LaunchPad, SensorTag) contain electrical circuits that are sensitive to static electricity. Before handling any of the devices, **discharge any static electricity from your body by touching a grounded metallic object with your hand** (e.g., a metal table leg or water tap). This helps prevent short circuits or potential fire hazards.""")
 
 st.write('---')
 
@@ -66,19 +66,47 @@ with st.expander("Within a Monitored Network (e.g., a University Network)"):
         If you're working in a closed or monitored environment, such as a university, it's advisable to consult your IT department for assistance.
         They can help ensure network configuration and assign a static IP for the Pi.
         """)
+        st.markdown("**Example message you can copy and send to your IT department:**")
+
+        email_template = """Subject: Request for Static IP Assignment for Raspberry Pi.
+
+Hello,
+
+I am setting up a Raspberry Pi device for an experiment and need it to have a static IP address on our network so that I can reliably access it.
+
+Here are the device details:
+
+- Device: Raspberry Pi
+- Connection type: Ethernet
+- Purpose: Sensor data collection + remote access
+- Hostname: raspberrypi (default, unless changed)
+- MAC address: [I will provide this if needed]
+
+Could you please assign a static IP address for this device, or let me know if additional information is required?
+
+Thank you!
+
+Best regards,
+[Your Name]"""
+
+        st.text_area(
+        "Copy & paste template",
+        value=email_template,
+        height=260,
+    )
 
 with st.expander("Independent Setup with Ethernet"):
-        st.markdown("""
-        If you're working independently and have access to an Ethernet connection, connect both the Raspberry Pi and your computer to the
-        same router using network cables.
-        """)
+    st.markdown(""" If you're working independently and have access to an Ethernet connection, connect both the Raspberry Pi and your computer to the same router using network cables. """)
+    st.markdown("""You can also use a **regular home router**. Simply connect both the Raspberry Pi and your computer to the same router using Ethernet cables.""")
+    st.image(f'Connect///router_illustration.png',  width=250)
+
 
 with st.expander("Alternative Setup Using a SIM Router"):
-        st.markdown("""
-        If you don’t have a wired Ethernet connection, you can use a router that allows the insertion of a SIM card for wireless connectivity.
-        A basic data package (around **5GB per month**) should be sufficient.
-        Ensure the router has two network cable ports to connect both the Raspberry Pi and your computer.
-        """)
+                st.markdown("""
+                If you don’t have a wired Ethernet connection, you can use a router that allows the insertion of a SIM card for wireless connectivity.
+                A basic data package (around **5GB per month**) should be sufficient.
+                Ensure the router has two network cable ports to connect both the Raspberry Pi and your computer.
+                """)
 
 
 st.markdown('<p class="big-font">Finding the Raspberry Pi IP Address</p>', unsafe_allow_html=True)
@@ -138,7 +166,8 @@ with tab5:
 
 with tab6:
     st.markdown("<style> .big-fonts {font-size:22px !important;} </style>", unsafe_allow_html=True)
-    st.markdown('<p class="big-fonts"><b>Connect the batteries to the SensorTag<b></p>', unsafe_allow_html=True)    
+    st.markdown('<p class="big-fonts"><b>Connect the batteries to the SensorTag<b></p>', unsafe_allow_html=True)  
+    st.info('After inserting the batteries,you can notice a red and green lights blinking on the SensorTag, this indicates that the sensor is powered on and functioning properly')  
     st.image(f'Connect//con_bat.png')
 
 with tab7:
@@ -158,11 +187,20 @@ with tab8:
     st.markdown('<p class="big-fontsh">Here you can control your sensors, start/end experiments, and see your data</p>',unsafe_allow_html=True)
     st.markdown('<p class="big-fontsh">A quick tutorial for the webapp is on the next slide</p>',unsafe_allow_html=True)
     with st.expander("How to get into the dashboard webapp?"):
-        st.write("The dashboard webapp would be your Raspberry PI's IP with the port 3000")
-        st.write("For example: 127.0.0.1:3000")
-        st.write("Pay attention that the computer you are working from should be using is on the same network as your Raspberry PI")
-    # with st.expander("How to get your Pi's IP?"):
-    #     st.write("""You should assign a static IP to your Raspberry Pi. If you are working within a university or any closed or monitored network, it is advisable to seek assistance from the IT department for this process.""")
+        st.markdown("""
+        **The dashboard webapp runs on your Raspberry Pi.**  
+        To open it, enter your Raspberry Pi’s IP address in your browser followed by `:3000`.
+
+        **Example:**  
+        `http://<Raspberry-Pi-IP>:3000`  
+        `http://[enter-your-Pi-IP-here]:3000`
+
+        **Important:**  
+        Your **computer must be connected to the same network** as the Raspberry Pi; otherwise, the dashboard will not load.
+        """)
+        st.markdown("For a visual diagram that explains this network setup in more detail, see the FAQ section:")
+        st.page_link("pages/07_FAQ.py", label="Go to FAQ (network diagram)")
+    
     st.image(f'Connect//dashboard.png')
 
 
