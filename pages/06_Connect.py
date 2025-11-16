@@ -96,8 +96,7 @@ Best regards,
     )
 
 with st.expander("Independent Setup with Ethernet"):
-    st.markdown(""" If you're working independently and have access to an Ethernet connection, connect both the Raspberry Pi and your computer to the same router using network cables. """)
-    st.markdown("""You can also use a **regular home router**. Simply connect both the Raspberry Pi and your computer to the same router using Ethernet cables.""")
+    st.markdown(""" If you're working independently and have access to an Ethernet connection, You can use a **regular home router**. Simply connect both the Raspberry Pi and your computer to the same router using Ethernet cables.""")
     st.image(f'Connect///router_illustration.png',  width=250)
 
 
