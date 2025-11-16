@@ -195,7 +195,7 @@ if pi:
 
     with tab42:
         st.subheader("Your'e all set!")
-        st.write('Procceed step 2: Flash the LaunchPad and the SensorTag firmwares')           
+        st.markdown('**Procceed to step 2: Flash the LaunchPad and the SensorTag firmwares**')           
 
 if lp_st:
     st.subheader('2. Flash the LaunchPad and the SensorTag firmwares')
