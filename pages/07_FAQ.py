@@ -81,7 +81,7 @@ st.image(f'FAQ//Scheme.png', width=800)
 
 st.markdown('<p class="big-font"><b>CC2650stk SensorTag maintenance guide<b></p>', unsafe_allow_html=True)
 expander12 = st.expander('Click here to see')
-expander12.image(f'https://lucid.app/lucidchart/784465cf-0a03-4a48-8277-246ab823b96d/edit?viewport_loc=-401%2C756%2C3508%2C1471%2C0_0&invitationId=inv_e8557cd7-15f1-42a3-9ec2-51cbf389e78f')
+expander12.image('https://lucid.app/lucidchart/784465cf-0a03-4a48-8277-246ab823b96d/edit?viewport_loc=-401%2C756%2C3508%2C1471%2C0_0&invitationId=inv_e8557cd7-15f1-42a3-9ec2-51cbf389e78f')
 
 
 # expander1 = st.expander('Downloading Uniflash')
