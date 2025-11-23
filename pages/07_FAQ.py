@@ -84,6 +84,31 @@ st.markdown('<p class="big-font"><b>CC2650stk SensorTag maintenance guide</b></p
 expander12 = st.expander('Click here to see')
 expander12.write("[Open diagram](https://lucid.app/lucidchart/784465cf-0a03-4a48-8277-246ab823b96d/edit?viewport_loc=-401%2C756%2C3508%2C1471%2C0_0&invitationId=inv_e8557cd7-15f1-42a3-9ec2-51cbf389e78f)")
 
+expander13 = st.expander("Click here to see")
+expander13.markdown(
+    """
+    <iframe 
+        src="https://lucid.app/lucidchart/784465cf-0a03-4a48-8277-246ab823b96d/edit?invitationId=inv_e8557cd7-15f1-42a3-9ec2-51cbf389e78f&page=0_0"
+        width="100%" 
+        height="800" 
+        style="border: none;"
+        allowfullscreen
+    ></iframe>
+    """,
+    unsafe_allow_html=True
+)
+
+expander14 = st.expander("Click here to see")
+expander14.markdown(
+    """
+    <a href="https://lucid.app/lucidchart/784465cf-0a03-4a48-8277-246ab823b96d/edit?invitationId=inv_e8557cd7-15f1-42a3-9ec2-51cbf389e78f&page=0_0"
+       target="_blank"
+       style="font-size:18px; color:#1f77b4;">
+       Open diagram (new tab)
+    </a>
+    """,
+    unsafe_allow_html=True,
+)
 
 # expander1 = st.expander('Downloading Uniflash')
 # expander1.tab1.write('Downloading Uniflash')
