@@ -4,6 +4,12 @@ Interactive user guide for the **Field4D IoT sensor system**, built with Streaml
 
 The application provides step-by-step instructions for installing, configuring, operating, and troubleshooting the Field4D system across a variety of environmental and experimental measurement setups.
 
+## Live Application
+
+The live user guide is available at:
+
+https://field4duserguide1.streamlit.app/
+
 ## Overview
 
 Field4D is an IoT-based sensing system designed for collecting environmental measurements using wireless sensors.
