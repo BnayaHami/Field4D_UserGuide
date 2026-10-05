@@ -1,50 +1,99 @@
-# User Guide for Field4D
-### IoT Sensor Monitoring for Greenhouse Meteorological Data
+# Field4D User Guide
 
-This repository contains a user guide for using IoT sensors to monitor meteorological data in greenhouses. The guide provides instructions on setting up the sensors, collecting data, and analyzing the results.
+Interactive user guide for the **Field4D IoT sensor system**, built with Streamlit.
 
-## Contents
+The application provides step-by-step instructions for installing, configuring, operating, and troubleshooting the Field4D system across a variety of environmental and experimental measurement setups.
 
-1. Introduction
-2. Getting Started
-3. Hardware
-4. Firmware
-5. Software
-6. Connect
-7. FAQ
+## Overview
 
-## Introduction
+Field4D is an IoT-based sensing system designed for collecting environmental measurements using wireless sensors.
 
----
+This repository contains the interactive user guide for the system.
 
-## Getting Started
+The guide walks users through the complete setup process, from preparing the required hardware to connecting the sensors and starting data collection.
 
----
+Some sections are intended for regular users, while additional technical sections are available for developers.
 
-## Hardware
+## Guide Contents
 
-Lists all the equipment required for the system
+### 1. First Step
 
-## Firmware
+Initial setup information and access to the Field4D web platform.
 
-Manage the OS of the Raspberry Pi and the firmware of the LaunchPad and sensors (relevant primarily for developers). If you are a developer, this is a required part of the installation
+### 2. Hardware
 
-## Software
+Overview of the equipment required to operate the system, including:
 
-Provides guides and useful tools for managing the software (relevant primarily for developers), this part is not required for the installation
+- Raspberry Pi
+- Raspberry Pi power supply
+- CC2650 LaunchPad
+- CC2650 SensorTags
+- MicroSD card
+- Network cables
+- Batteries
+- Optional debugging equipment
 
-## Connect
+### 3. Firmware
 
-Step-by-step guide on how to set up the IoT sensors
+Developer-oriented instructions for:
 
-## FAQ
+- Installing the Raspberry Pi operating system
+- Flashing LaunchPad firmware
+- Flashing SensorTag firmware
 
-Addresses common questions and provides additional information
+This section is password protected.
 
-## Contributing
+### 4. Software
 
----
+Developer-oriented information including:
 
-## License
+- SSH access
+- Linux services and daemons
+- Useful backend commands
+- Example InfluxDB and MongoDB queries
 
-[Specify the license for the project.]
+This section is password protected.
+
+### 5. Connect
+
+Step-by-step instructions for setting up and activating the Field4D system, including:
+
+- Network configuration
+- Raspberry Pi connection
+- LaunchPad connection
+- SensorTag activation
+- Dashboard access
+- Sensor configuration
+- Sensor positioning
+
+### 6. FAQ
+
+Troubleshooting information, system diagrams, maintenance resources, and answers to common setup questions.
+
+## Project Structure
+
+```text
+Field4D_UserGuide/
+├── .streamlit/
+│   └── config.toml
+│
+├── Connect/
+├── FAQ/
+├── Firmware/
+├── FirstStep/
+├── Hardware/
+│
+├── pages/
+│   ├── 02_First step.py
+│   ├── 03_Hardware.py
+│   ├── 04_Firmware (Developers) 🔒.py
+│   ├── 05_Software (Developers) 🔒.py
+│   ├── 06_Connect.py
+│   ├── 07_FAQ.py
+│   └── *.stl
+│
+├── f4d.png
+├── fieldarray.png
+├── moris.jpg
+├── requirements.txt
+└── UserGuide.py
